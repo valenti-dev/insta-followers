@@ -27,6 +27,13 @@
                     arrows: true,
                     dots: true,
                     slidesToShow: 2,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1,
+                        },
+                    }],
                 },
                 reviews: [],
             };
@@ -123,14 +130,15 @@
         padding: 0;
         margin: 0;
         position: absolute;
-        top: calc(100% + 2em);
+        top: calc(100% + 1.75em);
         width: 100%;
         box-sizing: border-box;
         list-style-type: none;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .slick-dots li {
-        margin: 0 0.5em;
+        margin: 0.25em 0.5em;
     }
     .slick-dots button {
         display: block;
@@ -162,5 +170,13 @@
     }
     .slick-track {
         display: flex !important;
+    }
+    @media(max-width: 767px) {
+        .slick-dots {
+            top: calc(100% + 1.5em);
+        }
+        .slick-slider {
+            margin: 0 -1em 4em;
+        }
     }
 </style>

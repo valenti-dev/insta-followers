@@ -1,5 +1,8 @@
 .reviews_sect {
     padding: 8em 0 4.25em;
+    background-image: url(/img/reviews_sect/bg-mob.png);
+    background-position: center top;
+    background-size: 100% auto;
 }
 .reviews_sect .row1 {
     text-align: center;
@@ -14,4 +17,17 @@
     font-size: 1.125em;
     margin: 0 auto 2.25em;
     max-width: 32.5em;
+}
+@media(max-width: 767px) {
+    .reviews_sect {
+        padding: 4.25em 0 2.25em;
+    }
+    .reviews_sect .row1 {
+        font-size: 1.625em;
+        margin: 0 0 0.5em;
+    }
+    .reviews_sect .row2 {
+        font-size: 0.9375em;
+        margin: 0 0 0.75em;
+    }
 }
