@@ -1,0 +1,107 @@
+.prices_text_sect {
+    padding: 8.625em 0 0;
+    background-size: 120em auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url('/img/prices_text_sect/bg.svg');
+    position: relative;
+    z-index: 1;
+}
+.prices_text_sect:before {
+    content: '';
+    display: block;
+    width: 14.75em;
+    height: 29.5em;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-60em, -50%);
+    background-size: contain;
+    background-position: center;
+    background-image: url('/img/prices_text_sect/bg-top-circle.svg');
+    background-repeat: no-repeat;
+}
+.prices_text_sect:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 97.5em;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 97.5em);
+    background: linear-gradient(90deg, #FAFCFF 0%, #F5F9FF 49.86%, #FAFCFF 100%);
+    z-index: -1;
+}
+.prices_text_sect .row1 .item {
+    padding: 2.75em 0;
+    border-bottom: 1px solid #E7EFF6;
+    margin: 0 -1em;
+    display: flex;
+    align-items: center;
+}
+.prices_text_sect .row1 .item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.prices_text_sect .row1 .item:first-child {
+    padding-top: 0;
+}
+.prices_text_sect .row1 .item:last-child {
+    border-bottom: none;
+}
+.prices_text_sect .row1 .item .col {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 1em;
+}
+.prices_text_sect .row1 .item .title {
+    line-height: 1.465;
+    font-weight: 900;
+    font-size: 1.875em;
+    margin: 0 0 0.6em;
+}
+.prices_text_sect .row1 .item .img {
+    display: block;
+    max-width: 100%;
+}
+.prices_text_sect .row1 .item .desc {
+    line-height: 1.565;
+    font-size: 1.0625em;
+}
+.prices_text_sect .row1 .item .desc:not(:last-child) {
+    margin-bottom: 2.5em;
+}
+@media(max-width: 767px) {
+    .prices_text_sect {
+        padding: 4.75em 0 2.5em;
+        background-size: 100% auto;
+        background-image: url(/img/prices_text_sect/bg-mob.svg);
+    }
+    .prices_text_sect:after {
+        top: 140em;
+        height: calc(100% - 140em);
+        background-image: none;
+        background-color: #F1F8FF;
+    }
+    .prices_text_sect .row1 .item {
+        padding: 2.25em 0;
+        display: block;
+        margin: 0;
+    }
+    .prices_text_sect .row1 .item:first-child {
+        padding-top: 0;
+    }
+    .prices_text_sect .row1 .item .col {
+        padding: 0;
+        width: 100%;
+    }
+    .prices_text_sect .row1 .item .title {
+        font-size: 1.625em;
+        margin: 0 0 0.45em;
+    }
+    .prices_text_sect .row1 .item .desc {
+        font-size: 0.9375em;
+    }
+    .prices_text_sect .row1 .item .desc:not(:last-child) {
+        margin-bottom: 2em;
+    }
+}

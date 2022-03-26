@@ -1,0 +1,123 @@
+.title_sect {
+    padding: 9.75em 0 4.25em;
+    background-position: center;
+    background-size: 120em auto;
+    background-image: url(/img/title_sect/bg.svg);
+    background-repeat: no-repeat;
+    margin: -6.5em 0 0;
+    text-align: center;
+}
+.title_sect .row1 {
+    font-weight: 900;
+    line-height: 1.235;
+    font-size: 2.875em;
+    margin: 0 auto 0.325em;
+}
+.title_sect .row2 {
+    line-height: 1.575;
+    font-size: 1.125em;
+    margin: 0 auto 2em;
+}
+.title_sect .row2:last-child {
+    margin-bottom: 0;
+}
+.title_sect .row3 {
+    margin: 0 auto 3.125em;
+}
+.title_sect .row3:last-child {
+    margin-bottom: 0;
+}
+.title_sect .row3 .butt {
+    min-width: 13.25em;
+}
+
+.title_sect .row4 {
+    display: flex;
+    margin: 0 -1em;
+    justify-content: center;
+}
+.title_sect .row4 .option {
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+}
+.title_sect .row4 .option:before {
+    width: 1.5em;
+    height: 1.5em;
+    content: '';
+    margin-right: 0.875em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/icons/check-mark-81b3ff.svg);
+}
+.title_sect .row4 .option .label {
+    font-weight: 500;
+    font-size: 1.0625em;
+    line-height: 1.24;
+}
+/*free_followers_page*/
+.free_followers_page .title_sect {
+    padding: 9.25em 0 4.25em;
+}
+.free_followers_page .title_sect .row2 {
+    max-width: 31em;
+}
+/*terms_page*/
+.terms_page .title_sect {
+    padding: 9.25em 0 4.5em;
+}
+.terms_page .title_sect .row2 {
+    max-width: 21em;
+}
+/*support_page*/
+.support_page .title_sect {
+    padding: 13.5em 0 6.5em;
+}
+@media(max-width: 767px) {
+    .title_sect {
+        padding: 6em 0 2em;
+        margin: -5em 0 0;
+    }
+    .title_sect .row1 {
+        font-size: 2em;
+        margin: 0 0 0.5em;
+    }
+    .title_sect .row2 {
+        font-size: 1em;
+        margin: 0 auto 0.75em;
+        max-width: 19em;
+    }
+    .title_sect .row3 {
+        margin: 0 auto 2em;
+    }
+    .title_sect .row3 .butt {
+        width: 100%;
+    }
+    .title_sect .row4 {
+        margin: 0 -0.75em;
+    }
+    .title_sect .row4 .option {
+        margin: 0 0.75em;
+    }
+    .title_sect .row4 .option:before {
+        width: 1.125em;
+        height: 1.125em;
+        margin-right: 0.625em;
+    }
+    .title_sect .row4 .option .label {
+        font-size: 0.8125em;
+    }
+    /*free_followers_page*/
+    .free_followers_page .title_sect {
+        padding: 6em 0 4em;
+    }
+    /*terms_page*/
+    .terms_page .title_sect {
+        padding: 7em 0 4.375em;
+    }
+    /*support_page*/
+    .support_page .title_sect {
+        padding: 8.5em 0 5.25em;
+    }
+}

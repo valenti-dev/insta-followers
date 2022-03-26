@@ -1,0 +1,141 @@
+.seo_text_sect {
+    padding: 6.5em 0 5em;
+    background-size: 120em auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url('/img/seo_text_sect/bg.svg');
+    position: relative;
+    z-index: 1;
+}
+.seo_text_sect:before {
+    content: '';
+    display: block;
+    width: 14.75em;
+    height: 29.5em;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-60em, -50%);
+    background-size: contain;
+    background-position: center;
+    background-image: url('/img/prices_text_sect/bg-top-circle.svg');
+    background-repeat: no-repeat;
+}
+.seo_text_sect:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 180em;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 180em);
+    background: linear-gradient(90deg, #FAFCFF 0%, #F5F9FF 49.86%, #FAFCFF 100%);
+    z-index: -1;
+}
+.seo_text_sect .row1 {
+    font-weight: 900;
+    font-size: 2.25em;
+    text-align: center;
+    line-height: 1.465;
+    margin: 0 0 1em;
+}
+.seo_text_sect .row2 {
+    line-height: 1.565;
+}
+.seo_text_sect .row2 .block {
+    padding: 3em 0;
+    border-bottom: 1px solid #DEE8F0;
+}
+.seo_text_sect .row2 .block:first-child {
+    padding-top: 0;
+}
+.seo_text_sect .row2 .block:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.seo_text_sect .row2 h3 {
+    font-weight: 700;
+    line-height: 1.465;
+    font-size: 1.625em;
+    margin: 0 0 0.4em;
+}
+.seo_text_sect .row2 p {
+    font-size: 1.0625em;
+}
+.seo_text_sect .row2 h3 + p,
+.seo_text_sect .row2 h4 + p {
+    margin-top: 0;
+}
+.seo_text_sect .row2 h4 {
+    font-size: 1.25em;
+    margin: 0 0 0.5em;
+    line-height: 1.465;
+}
+.seo_text_sect .row2 .adv {
+    padding-left: 3.25em;
+    position: relative;
+}
+.seo_text_sect .row2 .adv + .adv {
+    margin-top: 2em;
+}
+.seo_text_sect .row2 .adv:before {
+    content: '';
+    display: block;
+    width: 1.75em;
+    height: 1.75em;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/icons/check-mark-81b3ff.svg);
+    left: 0;
+    top: 1em;
+    transform: translate(0, -50%);
+}
+.seo_text_sect .row2 img {
+    display: block;
+    max-width: 100%;
+    margin: 3.125em 0 0;
+}
+@media(max-width: 767px) {
+    .seo_text_sect {
+        padding: 4em 0 3.5em;
+        background-image: url(/img/prices_text_sect/bg-mob.svg);
+        background-size: 100% auto;
+    }
+    .seo_text_sect:after {
+        top: 140em;
+        height: calc(100% - 140em);
+        background-image: none;
+        background-color: #F1F8FF;
+    }
+    .seo_text_sect .row1 {
+        font-size: 1.625em;
+        margin: 0 auto 1em;
+        line-height: 1.38;
+        max-width: 7em;
+    }
+    .seo_text_sect .row2 .block {
+        padding: 2.5em 0;
+    }
+    .seo_text_sect .row2 h3 {
+        font-size: 1.25em;
+        margin: 0 0 0.5em;
+    }
+    .seo_text_sect .row2 p {
+        font-size: 0.9375em;
+    }
+    .seo_text_sect .row2 h4 {
+        font-size: 1.125em;
+        margin: 0 0 0.7em;
+    }
+    .seo_text_sect .row2 .adv {
+        padding-left: 2.5em;
+    }
+    .seo_text_sect .row2 .adv + .adv {
+        margin-top: 1.5em;
+    }
+    .seo_text_sect .row2 img {
+        margin-top: 2em;
+    }
+}

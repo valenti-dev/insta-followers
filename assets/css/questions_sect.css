@@ -1,0 +1,118 @@
+.questions_sect {
+    padding: 4em 0 6.25em;
+}
+.questions_sect .row1 {
+    text-align: center;
+    line-height: 146.5%;
+    font-weight: 900;
+    font-size: 2.25em;
+    margin: 0 0 0.3em;
+}
+.questions_sect .row2 {
+    text-align: center;
+    color: #999FA5;
+    line-height: 146.5%;
+    font-size: 1.125em;
+    max-width: 32.5em;
+    margin: 0 auto 2.15em;
+}
+.questions_sect .row3 .item {
+    margin: 0 0 1.25em;
+    background-color: #FFFFFF;
+    border-radius: 0.625em;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+.questions_sect .row3 .item:last-child {
+    margin-bottom: 0;
+}
+.questions_sect .row3 .item.opened {
+    box-shadow: 0.25em 1em 2.5em rgba(30, 35, 66, 0.15);
+}
+.questions_sect .row3 .item .item_h {
+    cursor: pointer;
+    padding: 1.25em 4.25em;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.465;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.questions_sect .row3 .item .item_h .num {
+    position: absolute;
+    top: 50%;
+    left: 1.3em;
+    transform: translate(0, -50%);
+    font-size: 1.25em;
+}
+.questions_sect .row3 .item .item_h .question {
+    font-size: 1.25em;
+}
+.questions_sect .row3 .item .item_h .toggle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0.875em;
+    width: 2.875em;
+    height: 2.875em;
+    border-radius: 50%;
+    background-color: #D0DFF3;
+}
+.questions_sect .row3 .item.opened .item_h .toggle {
+    background-color: #81B2FF;
+    transform: translate(0, -50%) scale(1, -1);
+}
+.questions_sect .row3 .item .item_h .toggle .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+}
+.questions_sect .row3 .item .item_b {
+    padding: 0 4.25em 1.75em;
+    display: none;
+}
+.questions_sect .row3 .item.opened .item_b {
+    display: block;
+}
+.questions_sect .row3 .item .item_b .answer {
+    line-height: 1.55;
+}
+@media(max-width: 767px) {
+    .questions_sect {
+        padding: 4.375em 0 5.25em;
+        background-size: 100% 100%;
+        background-position: center;
+        background-image: url(/img/questions_sect/bg-mob.png);
+        background-repeat: no-repeat;
+    }
+    .questions_sect .row1 {
+        font-size: 1.625em;
+        margin: 0.25em
+    }
+    .questions_sect .row2 {
+        font-size: 0.9375em;
+        margin: 0 auto 2.5em;
+    }
+    .questions_sect .row3 .item .item_h {
+        padding: 0.75em 5.5em 0.75em 3.625em;
+        min-height: 4.375em;
+    }
+    .questions_sect .row3 .item .item_h .question {
+        font-size: 1em;
+    }
+    .questions_sect .row3 .item .item_h .toggle {
+        right: 0.625em;
+    }
+    .questions_sect .row3 .item.opened .item_b {
+        padding: 0 0.625em 1.75em 1.625em;
+    }
+    .questions_sect .row3 .item .item_b .answer {
+        font-size: 0.875em;
+    }
+}

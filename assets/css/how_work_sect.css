@@ -1,0 +1,111 @@
+.how_work_sect {
+    padding: 5.125em 0 7.5em;
+    text-align: center;
+}
+.how_work_sect .row1 {
+    font-weight: 900;
+    font-size: 2.25em;
+    line-height: 1.47;
+    margin: 0 0 0.3em;
+}
+.how_work_sect .row2 {
+    color: #999FA5;
+    line-height: 146.5%;
+    font-size: 1.125em;
+    margin: 0 auto 3em;
+    max-width: 32.5em;
+}
+.how_work_sect .row3 {
+    display: flex;
+    margin: -1em -1em 2.5em;
+}
+.how_work_sect .row3 .item {
+    margin: 1em;
+    border: 1px solid #E7EFF6;
+    border-radius: 0.625em;
+    border-bottom: 0.1875em solid #80E6E4;
+    padding: 1.5em 3.5em 2.5em;
+    box-sizing: border-box;
+    width: calc(100%/3 - 2em);
+}
+.how_work_sect .row3 .item:nth-child(2) {
+    border-bottom-color: #81B3FF;
+}
+.how_work_sect .row3 .item:nth-child(3) {
+    border-bottom-color: #B999FF;
+}
+.how_work_sect .row3 .item .icon_wrap {
+    background-color: #F1F8FF;
+    width: 7em;
+    height: 7em;
+    border-radius: 1.875em;
+    margin: 0 auto 2.25em;
+    position: relative;
+}
+.how_work_sect .row3 .item .icon_wrap .icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 3.75em;
+    max-height: 3.75em;
+}
+.how_work_sect .row3 .item .title {
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1.46;
+    margin: 0 0 0.5em;
+}
+.how_work_sect .row3 .item .desc {
+    line-height: 146.5%;
+}
+.how_work_sect .row4 .butt {
+    width: 13.25em;
+}
+@media(max-width: 767px) {
+    .how_work_sect {
+        padding: 2.375em 0 3.75em;
+    }
+    .how_work_sect .row1 {
+        font-size: 1.625em;
+        margin: 0.25em;
+    }
+    .how_work_sect .row2 {
+        font-size: 0.9375em;
+        margin: 0 0 2.5em;
+    }
+    .how_work_sect .row3 {
+        display: block;
+        margin: 0 0 2.5em;
+    }
+    .how_work_sect .row3 .item {
+        max-width: 18.25em;
+        margin: 0 auto 2.5em;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .how_work_sect .row3 .item:last-child {
+        margin-bottom: 0;
+    }
+    .how_work_sect .row3 .item .icon_wrap {
+        width: 5.25em;
+        height: 5.25em;
+        margin: 0 auto 1em;
+    }
+    .how_work_sect .row3 .item .icon_wrap .icon {
+        max-width: 2.875em;
+        max-height: 2.875em;
+    }
+    .how_work_sect .row3 .item .title {
+        font-size: 1.125em;
+        margin: 0 auto 0.72em;
+    }
+    .how_work_sect .row3 .item .desc {
+        font-size: 0.875em;
+    }
+    .how_work_sect .row4 .butt {
+        width: 100%;
+    }
+}

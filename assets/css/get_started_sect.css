@@ -1,0 +1,51 @@
+.get_started_sect {
+    padding: 13.75em 0 8.5em;
+    background-size: 120em auto;
+    background-position: center;
+    background-image: url(/img/get_started_sect/bg.png);
+    background-repeat: no-repeat;
+    margin-top: -6.5em;
+}
+.get_started_sect .row1 {
+    padding-left: 50%;
+    box-sizing: border-box;
+}
+.get_started_sect .row1 .line1 {
+    font-weight: 900;
+    font-size: 5em;
+    line-height: 1.235;
+    margin: 0 0 0.375em;
+}
+.get_started_sect .row1 .line2 {
+    font-size: 1.5em;
+    line-height: 1.405;
+    margin: 0 0 1.6666em;
+}
+.get_started_sect .row1 .line3 .butt.go_butt {
+    min-width: 14.875em;
+    box-shadow: none;
+}
+@media(max-width: 767px) {
+    .get_started_sect {
+        margin-top: -5em;
+        padding: 5.75em 0 22.875em;
+        background-image: url(/img/get_started_sect/bg-mob.png);
+        background-size: 100% auto;
+    }
+    .get_started_sect .row1 {
+        padding: 0;
+        text-align: center;
+    }
+    .get_started_sect .row1 .line1 {
+        text-align: center;
+        font-size: 2em;
+        margin: 0 0 0.625em;
+    }
+    .get_started_sect .row1 .line2 {
+        font-size: 1.125em;
+        margin: 0 0 2.388888em;
+    }
+    .get_started_sect .row1 .line3 .butt.go_butt {
+        width: 100%;
+    }
+}

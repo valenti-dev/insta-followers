@@ -1,0 +1,72 @@
+.footer {
+    background-color: #292E43;
+    color: #ffffff;
+    padding: 4em 0 4.5em;
+}
+.footer .row1 {
+    display: flex;
+}
+.footer .row1 .col1 {
+    width: 24.75em;
+    margin-right: 6.875em;
+}
+.footer .row1 .col2 {
+    width: 11em;
+    margin-right: 8.25em;
+}
+.footer .row1 .col3 {
+    width: 17.25em;
+}
+.footer .row1 .line1 {
+    margin: 0 0 1.75em;
+}
+.footer .row1 .line2 {
+    line-height: 1.48;
+    font-size: 0.8125em;
+}
+.footer .row1 .line3 {
+    font-weight: 900;
+    font-size: 1.75em;
+    line-height: 1.71;
+    margin: 0;
+}
+.footer .row1 .line4 {
+    line-height: 1.71;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.footer .row1 .line4 a {
+    color: inherit;
+}
+.footer .row1 .line5 {
+    line-height: 1.71;
+    margin: 0 0 1.25em;
+}
+.footer .row1 .line6 .butt {
+    width: 8.375em;
+    padding: 0 2em;
+}
+@media(max-width: 767px) {
+    .footer {
+        padding: 2.75em 0;
+        text-align: center;
+    }
+    .footer .row1 {
+        display: block;
+    }
+    .footer .row1 .col {
+        margin: 0;
+        width: 100%;
+    }
+    .footer .row1 .col1 {
+        margin-bottom: 1.75em;
+    }
+    .footer .row1 .col2 {
+        margin-bottom: 2.25em;
+    }
+    .footer .row1 .line5 {
+        max-width: 19em;
+        margin: 0 auto 1.5em;
+    }
+}

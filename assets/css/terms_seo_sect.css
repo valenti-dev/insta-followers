@@ -1,0 +1,105 @@
+.terms_seo_sect {
+    padding: 4.5em 0 1.5em;
+}
+.terms_seo_sect .row1 {
+    line-height: 1.525;
+}
+.terms_seo_sect .row1 hr {
+    margin: 2.625em 0;
+    border-top: 1px solid #E7EFF6;
+}
+.terms_seo_sect .row1 hr:last-child {
+    margin-bottom: 0;
+}
+.terms_seo_sect .row1 h2 {
+    font-size: 2em;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    margin: 0.75em 0;
+}
+.terms_seo_sect .row1 h2:first-child {
+    margin-top: 0;
+}
+.terms_seo_sect .row1 h2:after {
+    display: inline-block;
+    content: '';
+    height: 2px;
+    background-color: #81B2FF;
+    flex-grow: 1;
+    position: absolute;
+    bottom: 0.5em;
+    width: 100%;
+    margin-left: 0.5em;
+}
+.terms_seo_sect .row1 h3 {
+    font-size: 1.625em;
+    margin: 0.75em 0;
+    font-weight: 700;
+}
+.terms_seo_sect .row1 h3:first-child {
+    margin-top: 0;
+}
+.terms_seo_sect .row1 b {
+    font-weight: 500;
+}
+.terms_seo_sect .row1 blockquote {
+    padding: 1em 1.75em;
+    background-color: #E5F1FD;
+    border-radius: 0.625em;
+    margin: 3.5em auto;
+    font-weight: 500;
+    font-size: inherit;
+}
+.terms_seo_sect .row1 .img_text_block {
+    margin: 3.5em 0;
+    display: flex;
+}
+.terms_seo_sect .row1 .img_text_block .img_wrap {
+    width: 35%;
+    box-sizing: border-box;
+    padding-right: 2.5em;
+}
+.terms_seo_sect .row1 .img_text_block .img_wrap .img {
+    display: block;
+    max-width: 100%;
+}
+.terms_seo_sect .row1 .img_text_block .text_wrap {
+    width: 65%;
+}
+.terms_seo_sect .row1 ul {
+    padding-left: 1em;
+}
+@media(max-width: 767px) {
+    .terms_seo_sect {
+        padding: 2.75em 0 3em;
+    }
+    .terms_seo_sect .row1 h2 {
+        font-size: 1.625em;
+    }
+    .terms_seo_sect .row1 h2:after {
+        content: none;
+    }
+    .terms_seo_sect .row1 h3 {
+        font-size: 1.25em;
+    }
+    .terms_seo_sect .row1 hr {
+        margin: 2.5em 0;
+    }
+    .terms_seo_sect .row1 .img_text_block {
+        flex-direction: column-reverse;
+        margin: 2em 0;
+    }
+    .terms_seo_sect .row1 .img_text_block .img_wrap {
+        width: 100%;
+        padding: 0;
+        margin-top: 0.5em;
+    }
+    .terms_seo_sect .row1 .img_text_block .text_wrap {
+        width: 100%;
+    }
+    .terms_seo_sect .row1 blockquote {
+        margin: 2em 0;
+        padding: 0.875em 1.25em;
+    }
+}

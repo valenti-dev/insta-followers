@@ -1,0 +1,39 @@
+.support_form_sect {
+    padding: 5em 0 6em;
+    line-height: 1.465;
+}
+.support_form_sect .row1 {
+    padding-right: 50%;
+}
+.support_form_sect .row1 .line1 {
+    font-size: 2.25em;
+    font-weight: 900;
+    margin: 0 0 0.35em;
+}
+.support_form_sect .row1 .line2 {
+    font-size: 1.125em;
+    margin: 0 0 1.67em;
+}
+@media(max-width: 767px) {
+    .support_form_sect {
+        padding: 4.75em 0 3.75em;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+        background-image: url(/img/support_form_sect/mob-bg.svg);
+    }
+    .support_form_sect .row1 {
+        padding: 0;
+    }
+    .support_form_sect .row1 .line1 {
+        font-size: 1.625em;
+        margin: 0 0 0.5em;
+        text-align: center;
+    }
+    .support_form_sect .row1 .line2 {
+        font-size: 0.9375em;
+        margin: 0 auto 1em;
+        text-align: center;
+        max-width: 12em;
+    }
+}

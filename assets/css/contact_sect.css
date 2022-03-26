@@ -1,0 +1,35 @@
+.contact_sect {
+    padding: 9.25em 0 4.75em;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/contact_sect/bg.png);
+    flex-grow: 1;
+    margin-top: -6.5em;
+}
+.contact_sect .row1 {
+    padding-right: 50%;
+    box-sizing: border-box;
+}
+.contact_sect .row1 .line1 {
+    font-weight: 900;
+    font-size: 2.875em;
+    line-height: 1.235;
+    margin: 0 0 0.6em;
+}
+@media(max-width: 767px) {
+    .contact_sect {
+        margin-top: -5em;
+        padding: 5.75em 0 21.625em;
+        background-image: url(/img/contact_sect/bg-mob.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    .contact_sect .row1 {
+        padding: 0;
+    }
+    .contact_sect .row1 .line1 {
+        text-align: center;
+        font-size: 2em;
+        margin: 0 0 1em;
+    }
+}

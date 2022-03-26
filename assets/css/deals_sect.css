@@ -1,0 +1,90 @@
+.deals_sect {
+    padding: 5em 0 6.25em;
+}
+.deals_sect .row1 {
+    text-align: center;
+    line-height: 146.5%;
+    font-weight: 900;
+    font-size: 2.25em;
+    margin: 0 0 0.3em;
+}
+.deals_sect .row2 {
+    text-align: center;
+    color: #999FA5;
+    line-height: 146.5%;
+    font-size: 1.125em;
+    max-width: 32.5em;
+    margin: 0 auto 3.7em;
+}
+.deals_sect .row3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.deals_sect .row3 .item {
+    width: 25%;
+    box-sizing: border-box;
+    position: relative;
+}
+.deals_sect .row3 .item:not(:nth-child(4n)) {
+    border-right: 1px solid #E7EFF6;
+}
+.deals_sect .row3 .item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
+    border-top: 1px solid #E7EFF6;
+}
+.deals_sect .row3 .item:before {
+    content: '';
+    display: block;
+    padding: 30% 0;
+}
+.deals_sect .row3 .item .img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+/*terms_page*/
+.terms_page .deals_sect {
+    padding: 7.875em 0 6.25em;
+}
+.terms_page .deals_sect .row3 .item:before {
+    padding: 27.25%;
+}
+@media(max-width: 767px) {
+    .deals_sect {
+        padding: 2.5em 0 2em;
+    }
+    .deals_sect .row1 {
+        font-size: 1.625em;
+        margin: 0 auto 0.25em;
+        max-width: 12em;
+    }
+    .deals_sect .row2 {
+        font-size: 0.9375em;
+        margin: 0 auto 2.5em;
+    }
+    .deals_sect .row3 .item {
+        border: none !important;
+        width: 50%;
+    }
+    .deals_sect .row3 .item:before {
+        padding: 26% 0;
+    }
+    .deals_sect .row3 .item .img {
+        max-width: 8em;
+        max-height: 4em;
+    }
+    /*terms_page*/
+    .terms_page .deals_sect {
+        padding: 3.75em 0 3em;
+        background-image: url(/img/deals_sect/bg-mob.svg);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .terms_page .deals_sect .row3 .item:before {
+        padding: 25%;
+    }
+}

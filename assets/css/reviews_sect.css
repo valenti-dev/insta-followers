@@ -1,0 +1,17 @@
+.reviews_sect {
+    padding: 8em 0 4.25em;
+}
+.reviews_sect .row1 {
+    text-align: center;
+    line-height: 1.465;
+    font-size: 2.25em;
+    margin: 0 0 0.3em;
+}
+.reviews_sect .row2 {
+    line-height: 1.465;
+    text-align: center;
+    color: #999FA5;
+    font-size: 1.125em;
+    margin: 0 auto 2.25em;
+    max-width: 32.5em;
+}

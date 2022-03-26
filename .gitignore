@@ -1,0 +1,7 @@
+public/js
+public/css
+public/img
+package-lock.json
+node_modules
+.idea
+mix-manifest.json

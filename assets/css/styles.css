@@ -1,0 +1,63 @@
+html, body {
+    font-size: 16px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #292E43;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: center top;
+    background-size: 120em auto;
+    overflow: hidden;
+}
+.body.home_page {
+    background-image: url(/img/home-bg.png);
+}
+.body.terms_page {
+    background-image: url(/img/terms-bg.svg);
+}
+.body.support_page {
+    background-image: url(/img/support-bg.png);
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.5em;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+.wrap {
+    max-width: 71.375em;
+    width: 90%;
+    margin: 0 auto;
+}
+a {
+    color: #81B3FF;
+}
+@media(min-width: 1921px) {
+    .body {
+        font-size: 0.8333333333vw;
+    }
+}
+@media(max-width: 1269px) {
+    .body {
+        font-size: 1.2598vw;
+    }
+}
+@media(max-width: 767px) {
+    .body {
+        font-size: 4.267vw;
+    }
+    .main {
+        padding-top: 5em;
+    }
+    .body.home_page,
+    .body.terms_page,
+    .body.support_page {
+        background-image: none;
+    }
+}

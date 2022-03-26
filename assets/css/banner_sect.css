@@ -1,0 +1,100 @@
+.banner_sect {
+    margin: -6.5em 0 0;
+    padding: 11.875em 0 2.8125em;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/banner_sect/bg.png);
+}
+.banner_sect .row1 {
+    max-width: 36.5em;
+}
+.banner_sect .row1 .line1 {
+    font-weight: 300;
+    font-size: 2.875em;
+    line-height: 1.24;
+    margin: 0 0 0.5em;
+}
+.banner_sect .row1 .line1 b {
+    font-weight: 900;
+}
+.banner_sect .row1 .line2 {
+    font-size: 1.125em;
+    line-height: 1.58;
+    max-width: 27.6em;
+    margin: 0 0 2.25em;
+}
+.banner_sect .row1 .line3 {
+    margin: 0 0 6.75em;
+}
+.banner_sect .row1 .line3 .butt {
+    width: 14.5em;
+}
+.banner_sect .row1 .line4 {
+    display: flex;
+    margin: 0 -1em;
+}
+.banner_sect .row1 .line4 .option {
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+}
+.banner_sect .row1 .line4 .option:before {
+    width: 1.5em;
+    height: 1.5em;
+    content: '';
+    margin-right: 0.875em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/icons/check-mark-81b3ff.svg);
+}
+.banner_sect .row1 .line4 .option .label {
+    font-weight: 500;
+    font-size: 1.0625em;
+    line-height: 1.24;
+}
+@media(max-width: 767px) {
+    .banner_sect {
+        padding: 5.5em 0 23.75em;
+        background-image: url(/img/banner_sect/bg-mob.png);
+        background-size: cover;
+        margin: -5em 0 0;
+    }
+    .banner_sect .row1 {
+        max-width: 100%;
+    }
+    .banner_sect .row1 .line1 {
+        text-align: center;
+        font-size: 2em;
+        margin: 0 auto 0.5em;
+        max-width: 10em;
+    }
+    .banner_sect .row1 .line1 br {
+        display: none;
+    }
+    .banner_sect .row1 .line2 {
+        font-size: 1em;
+        margin: 0 0 2em;
+        text-align: center;
+    }
+    .banner_sect .row1 .line3 {
+        margin: 0 0 1.5em;
+    }
+    .banner_sect .row1 .line3 .butt {
+        width: 100%;
+    }
+    .banner_sect .row1 .line4 {
+        margin: 0 -0.75em;
+    }
+    .banner_sect .row1 .line4 .option {
+        margin: 0 0.75em;
+    }
+    .banner_sect .row1 .line4 .option:before {
+        width: 1.125em;
+        height: 1.125em;
+        margin-right: 0.625em;
+    }
+    .banner_sect .row1 .line4 .option .label {
+        font-size: 0.8125em;
+    }
+}
