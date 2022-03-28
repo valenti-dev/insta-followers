@@ -54,8 +54,10 @@ var app = new Vue({
         payment: {
             success: null,
         },
+        loaded: false,
     },
     mounted() {
+        this.loaded = true;
         this.scroll_event();
         window.addEventListener('scroll', this.scroll_event);
         axios.post('user_info.php').then((response) => {

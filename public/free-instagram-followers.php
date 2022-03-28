@@ -4,7 +4,6 @@ $title = 'Free Instagram Followers';
 $description = '';
 ?>
 <? include '../assets/php/head.php'; ?>
-    <link rel="stylesheet" href="/css/title_sect.css">
     <section class="title_sect">
         <div class="wrap">
             <h1 class="row1">Free Instagram Followers</h1>
@@ -14,6 +13,12 @@ $description = '';
             </div>
         </div>
     </section>
+<?
+$styles['title_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/title_sect.css',
+];
+?>
     <section class="free_order_sect">
         <div class="wrap">
             <div class="row1" v-if="free_order.attention_opened">
@@ -53,8 +58,13 @@ $description = '';
                 </div>
             </div>
         </div>
-        <link rel="stylesheet" href="/css/free_order_sect.css">
     </section>
+<?
+$styles['free_order_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/free_order_sect.css',
+];
+?>
     <section class="seo_text_sect">
         <div class="wrap">
             <h2 class="row1">
@@ -140,4 +150,10 @@ $description = '';
         </div>
         <link rel="stylesheet" href="/css/seo_text_sect.css">
     </section>
+<?
+$styles['seo_text_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/seo_text_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

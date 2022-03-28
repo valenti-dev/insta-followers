@@ -4,7 +4,6 @@ $title = 'Terms & Conditions';
 $description = '';
 ?>
 <? include '../assets/php/head.php'; ?>
-    <link rel="stylesheet" href="/css/title_sect.css">
     <section class="title_sect">
         <div class="wrap">
             <h1 class="row1">Terms & Conditions</h1>
@@ -13,6 +12,12 @@ $description = '';
             </div>
         </div>
     </section>
+<?
+$styles['title_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/title_sect.css',
+];
+?>
     <section class="terms_seo_sect">
         <div class="wrap">
             <div class="row1">
@@ -300,7 +305,12 @@ $description = '';
             </div>
         </div>
     </section>
-    <link rel="stylesheet" href="/css/terms_seo_sect.css">
+<?
+$styles['terms_seo_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/terms_seo_sect.css',
+];
+?>
     <section class="deals_sect">
         <div class="wrap">
             <h2 class="row1">Sitename has been Featured in</h2>
@@ -316,5 +326,10 @@ $description = '';
             </div>
         </div>
     </section>
-    <link rel="stylesheet" href="/css/deals_sect.css">
+<?
+$styles['deals_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/deals_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

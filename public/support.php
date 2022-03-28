@@ -4,7 +4,6 @@ $title = 'How can we help you?';
 $description = '';
 ?>
 <? include '../assets/php/head.php'; ?>
-<link rel="stylesheet" href="/css/title_sect.css">
 <section class="title_sect">
     <div class="wrap">
         <h1 class="row1">How can we help you?</h1>
@@ -16,6 +15,12 @@ $description = '';
         </div>
     </div>
 </section>
+<?
+$styles['title_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/title_sect.css',
+];
+?>
 <section class="support_items_sect">
     <div class="wrap">
         <div class="row1">
@@ -64,7 +69,12 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/support_items_sect.css">
+<?
+$styles['support_items_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/support_items_sect.css',
+];
+?>
 <section class="support_form_sect">
     <div class="wrap">
         <div class="row1">
@@ -78,5 +88,10 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/support_form_sect.css">
+<?
+$styles['support_form_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/support_form_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

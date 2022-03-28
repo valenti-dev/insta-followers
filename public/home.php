@@ -31,7 +31,12 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/banner_sect.css">
+<?
+$styles['banner_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/banner_sect.css',
+];
+?>
 <section class="how_work_sect">
     <div class="wrap">
         <h2 class="row1">How It Works?</h2>
@@ -78,7 +83,12 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/how_work_sect.css">
+<?
+$styles['how_work_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/how_work_sect.css',
+];
+?>
 <section class="buy_sect">
     <div class="wrap">
         <h2 class="row1">
@@ -93,7 +103,12 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/buy_sect.css">
+<?
+$styles['buy_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/buy_sect.css',
+];
+?>
 <section class="deals_sect">
     <div class="wrap">
         <h2 class="row1">Sitename has been Featured in</h2>
@@ -109,7 +124,12 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/deals_sect.css">
+<?
+$styles['deals_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/deals_sect.css',
+];
+?>
 <div class="questions_sect">
     <div class="wrap">
         <h2 class="row1">
@@ -140,7 +160,12 @@ $description = '';
         </div>
     </div>
 </div>
-<link rel="stylesheet" href="/css/questions_sect.css">
+<?
+$styles['questions_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/questions_sect.css',
+];
+?>
 <section class="img_text_sect">
     <div class="wrap">
         <div class="row1">
@@ -193,7 +218,12 @@ $description = '';
         </div>
     </div>
 </section>
-<link rel="stylesheet" href="/css/img_text_sect.css">
+<?
+$styles['img_text_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/img_text_sect.css',
+];
+?>
 <section class="reviews_sect">
     <div class="wrap">
         <h2 class="row1">Reviews</h2>
@@ -203,5 +233,10 @@ $description = '';
         <reviews class="row3"></reviews>
     </div>
 </section>
-<link rel="stylesheet" href="/css/reviews_sect.css">
+<?
+$styles['reviews_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/reviews_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

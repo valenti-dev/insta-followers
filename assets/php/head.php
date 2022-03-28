@@ -1,3 +1,6 @@
+<?
+$styles = [];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +13,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/styles.css">
+    <?
+    $styles['styles'] = [
+            'rel' => 'stylesheet',
+        'href' => '/css/styles.css',
+    ];
+    ?>
 
     <? if(isset($canonical)): ?>
         <link rel="canonical" href="<?= $canonical; ?>"/>
     <? endif; ?>
+    <style>
+        .body {
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 <body>
-    <div class="body <?= isset($page_class) ? $page_class : ''; ?>" id="app" :class="(scrolled || payment.success !== null) ? 'scrolled' : ''">
+    <div class="body <?= isset($page_class) ? $page_class : ''; ?>" id="app" :class="{
+        scrolled: (scrolled || payment.success !== null),
+        loaded: loaded,
+    }">
         <pay-status-popup v-if="payment.success !== null" :success="payment.success" @close="payment.success = null"></pay-status-popup>
         <? include 'header.php'; ?>
         <main class="main">

@@ -5,7 +5,6 @@ $description = '';
 ?>
 <? include '../assets/php/head.php'; ?>
 <section class="contact_sect">
-    <link rel="stylesheet" href="/css/contact_sect.css">
     <div class="wrap">
         <div class="row1">
             <h1 class="line1">Contact</h1>
@@ -13,4 +12,10 @@ $description = '';
         </div>
     </div>
 </section>
+<?
+$styles['contact_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/contact_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

@@ -4,7 +4,6 @@ $title = 'Simple Pricing';
 $description = '';
 ?>
 <? include '../assets/php/head.php'; ?>
-    <link rel="stylesheet" href="/css/title_sect.css">
     <section class="title_sect">
         <div class="wrap">
             <h1 class="row1">Simple Pricing</h1>
@@ -28,8 +27,12 @@ $description = '';
             </div>
         </div>
     </section>
-    <link rel="stylesheet" href="/css/buy_sect.css">
-
+<?
+$styles['title_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/title_sect.css',
+];
+?>
     <section class="buy_sect">
         <div class="wrap">
             <h2 class="row1">
@@ -42,7 +45,12 @@ $description = '';
             <pricing class="row3"></pricing>
         </div>
     </section>
-    <link rel="stylesheet" href="/css/prices_text_sect.css">
+<?
+$styles['buy_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/buy_sect.css',
+];
+?>
     <section class="prices_text_sect">
         <div class="wrap">
             <div class="row1">
@@ -107,4 +115,10 @@ $description = '';
             </div>
         </div>
     </section>
+<?
+$styles['prices_text_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/prices_text_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

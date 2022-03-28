@@ -5,7 +5,6 @@ $description = '';
 ?>
 <? include '../assets/php/head.php'; ?>
     <section class="get_started_sect">
-        <link rel="stylesheet" href="/css/get_started_sect.css">
         <div class="wrap">
             <div class="row1">
                 <h1 class="line1">Get Started</h1>
@@ -18,4 +17,10 @@ $description = '';
             </div>
         </div>
     </section>
+<?
+$styles['get_started_sect'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/get_started_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>

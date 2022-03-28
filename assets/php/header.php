@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/css/header.css">
 <header class="header" :class="header.opened ? 'opened' : ''">
     <div class="wrap">
         <div class="row1">
@@ -21,3 +20,9 @@
         </div>
     </div>
 </header>
+<?
+$styles['header'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/header.css',
+];
+?>

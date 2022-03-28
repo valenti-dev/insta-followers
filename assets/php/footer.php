@@ -36,4 +36,9 @@
         </div>
     </div>
 </footer>
-<link rel="stylesheet" href="/css/footer.css">
+<?
+$styles['footer'] = [
+    'rel' => 'stylesheet',
+    'href' => '/css/footer.css',
+];
+?>
