@@ -23,6 +23,12 @@
     max-width: calc(50% - 1em);
     top: 0;
     right: 0;
+    border-radius: 0.625em;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+.img_text_sect .row1 .item .image:hover {
+    box-shadow: 0 0 2em 0.625em #81B3FF;
 }
 .img_text_sect .row1 .item:nth-child(2n) .image {
     right: auto;

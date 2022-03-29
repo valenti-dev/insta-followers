@@ -63,6 +63,12 @@
 .terms_seo_sect .row1 .img_text_block .img_wrap .img {
     display: block;
     max-width: 100%;
+    border-radius: 0.625em;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+.terms_seo_sect .row1 .img_text_block .img_wrap .img:hover {
+    box-shadow: 0 0 2em 0.625em #81B3FF;
 }
 .terms_seo_sect .row1 .img_text_block .text_wrap {
     width: 65%;
