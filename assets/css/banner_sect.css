@@ -32,7 +32,7 @@
     opacity: 0;
     animation-name: show;
     animation-duration: 1s;
-    animation-delay: 1.3s;
+    animation-delay: 0.8s;
     animation-fill-mode: both;
 }
 .banner_sect .row1 .line3 {
@@ -41,7 +41,7 @@
     opacity: 0;
     animation-name: show;
     animation-duration: 1s;
-    animation-delay: 2.3s;
+    animation-delay: 1.3s;
     animation-fill-mode: both;
 }
 .banner_sect .row1 .line3 .butt {
@@ -54,7 +54,7 @@
     opacity: 0;
     animation-name: show;
     animation-duration: 1s;
-    animation-delay: 3.3s;
+    animation-delay: 1.8s;
     animation-fill-mode: both;
 }
 .banner_sect .row1 .line4 .option {

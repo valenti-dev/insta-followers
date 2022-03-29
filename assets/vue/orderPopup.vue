@@ -47,7 +47,7 @@
                             <text-input v-model="step1.email" type="email" placeholder="Your E-mail Address"></text-input>
                         </field>
                     </div>
-                    <butt class="go_butt" @click="select_username" :disabled="disabled">Select Account</butt>
+                    <butt class="go_butt" @click="select_account" :disabled="disabled">Select Account</butt>
                 </template>
             </template>
             <template v-else-if="step === 2">
@@ -120,6 +120,7 @@
                         background: '#C2CEDE',
                         specifyBorderRadius: '0.1875em',
                         size: '0.375em',
+                        keepShow: true,
                     },
                 },
                 username: null,
@@ -159,32 +160,46 @@
                 this.$emit('close');
             },
             //step1
-            select_username() {
+            select_account() {
                 this.disabled = true;
-                if(this.step1.username) {
-                    var username = this.step1.username[0] === '@' ? this.step1.username.substr(1) : this.step1.username;
-                    axios.post('//'+location.host+'/api/acc-info.php', {
-                        username: username,
-                    }).then((response) => {
-                        if(response.data.success) {
-                            var account = response.data.data;
-                            if(this.step1.email) {
-                                this.username = account.username;
-                                this.email = this.step1.email;
-                                this.save_account(account);
-                                this.step = 2;
-                            } else {
-                                this.step1.errors.email = 'Fill this field!';
+                var username = this.step1.username[0] === '@' ? this.step1.username.substr(1) : this.step1.username;
+                var form_data = new FormData();
+                form_data.append('cart', 0);
+                form_data.append('email', this.step1.email);
+                form_data.append('system', 'Instagram');
+                form_data.append('service', 'Followers');
+                form_data.append('type', this.plan.type_key);
+                form_data.append('count', this.plan.count);
+                form_data.append('username', username);
+                axios.post('create_order_v2.php', form_data).then((response) => {
+                    switch(response.data.result) {
+                        case 'Error': {
+                            switch(+response.data.error_code) {
+                                case 101: { this.step1.errors.general = response.data.text; } break;
+                                case 102: { this.step1.errors.email = response.data.text; } break;
+                                case 103: { this.step1.errors.general = response.data.text; } break;
+                                case 104: { this.step1.errors.general = response.data.text; } break;
+                                case 201: { this.step1.errors.username = response.data.text; } break;
+                                case 202: { this.step1.errors.username = response.data.text; } break;
+                                case 203: { this.step1.errors.username = response.data.text; } break;
+                                case 301: { this.step1.errors.general = response.data.text; } break;
                             }
-                        } else {
-                            this.step1.errors.username = 'Please, enter the correct username and try again.';
-                        }
-                        this.disabled = false;
-                    });
-                } else {
-                    this.step1.errors.username = 'Fill this field!';
+                        } break;
+                        case 'Ok': {
+                            var account = {
+                                username: response.data.data.username,
+                                thumb: response.data.data.avatar,
+                            };
+                            this.username = account.username;
+                            this.email = this.step1.email;
+                            this.save_account(account);
+                            this.step = 2;
+                            this.step3 = response.data.data;
+                        } break;
+                    }
+                }).catch((response) => {}).then(() => {
                     this.disabled = false;
-                }
+                });
             },
             rm_account(indx) {
                 if(this.accounts[indx]) {
@@ -201,7 +216,7 @@
             save_account(acc) {
                 var accs = localStorage.getItem(this.step1.accs_ls_key);
                 accs = accs ? JSON.parse(accs) : [];
-                if(!accs.includes(acc)) {
+                if(accs.every((_acc) => { return _acc.username !== acc.username })) {
                     accs.push(acc);
                     localStorage.setItem(this.step1.accs_ls_key, JSON.stringify(accs));
                 }
@@ -209,66 +224,8 @@
             save_email(email) {
                 localStorage.setItem(this.step1.email_ls_key, email);
             },
-            select_account() {
-                this.disabled = true;
-                if(this.step1.username) {
-                    var username = this.step1.username[0] === '@' ? this.step1.username.substr(1) : this.step1.username;
-                    axios.post('//'+location.host+'/api/acc-info.php', {
-                        username: username,
-                    }).then((response) => {
-                        if(response.data.success) {
-                            var account = response.data.data;
-                            if(this.step1.email) {
-                                this.username = account.username;
-                                this.email = this.step1.email;
-                                this.step = 2;
-                            } else {
-                                this.step1.errors.email = 'Fill this field!';
-                            }
-                        } else {
-                            this.step1.errors.username = 'Please, enter the correct username and try again.';
-                        }
-                        this.disabled = false;
-                    });
-                } else {
-                    this.step1.errors.username = 'Fill this field!';
-                    this.disabled = false;
-                }
-            },
             get_payment_methods() {
-                this.disabled = true;
-                var form_data = new FormData();
-                form_data.append('cart', 0);
-                form_data.append('email', this.email);
-                form_data.append('system', 'Instagram');
-                form_data.append('service', 'Followers');
-                form_data.append('type', this.plan.type_key);
-                form_data.append('count', this.plan.count);
-                form_data.append('username', this.username);
-                axios.post('create_order_v2.php', form_data).then((response) => {
-                    switch(response.data.result) {
-                        case 'Error': {
-                            this.step2.error = response.data.text;
-                        } break;
-                        case 'Ok': {
-                            this.step3 = response.data.data;
-                            this.step = 3;
-                        } break;
-                    }
-                }).catch((response) => {
-                    switch(response.status) {
-                        case 101: { this.step2.error = 'Transferred tariff is not correct'; } break;
-                        case 102: { this.step2.error = 'Email is not correct'; } break;
-                        case 103: { this.step2.error = 'Incorrect list of comments'; } break;
-                        case 104: { this.step2.error = 'Links not provided'; } break;
-                        case 201: { this.step2.error = 'Account is private'; } break;
-                        case 202: { this.step2.error = 'No posts found in account'; } break;
-                        case 203: { this.step2.error = 'Failed to get account information'; } break;
-                        case 301: { this.step2.error = 'the user is blocked'; } break;
-                    }
-                }).then(() => {
-                    this.disabled = false;
-                });
+                this.step = 3;
             },
             open_pay(method) {
                 if(method.modal) {

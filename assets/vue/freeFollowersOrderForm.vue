@@ -52,43 +52,36 @@
         methods: {
             submit() {
                 this.disabled = true;
-                if(this.username) {
-                    var username = this.username[0] === '@' ? this.username.substr(1) : this.username;
-                    axios.post('//'+location.host+'/api/acc-info.php', {
-                        username: username,
-                    }).then((response) => {
-                        if(response.data.success) {
-                            var account = response.data.data;
-                            if(this.email) {
-                                var form_data = new FormData();
-                                form_data.append('email', this.email);
-                                form_data.append('username', this.username);
-                                form_data.append('system', 'Instagram');
-                                form_data.append('service', 'Followers');
-                                form_data.append('type', 't1');
-                                form_data.append('count', '10');
-                                axios.post('create_test_order_v2.php', form_data).then((response) => {
-                                    switch (response.data.result) {
-                                        case 'Error': {
-                                            this.errors.general = response.data.text;
-                                        } break;
-                                        case 'Ok': {
-                                            this.success = true;
-                                        } break;
-                                    }
-                                });
-                            } else {
-                                this.errors.email = 'Fill this field!';
+                var username = this.username[0] === '@' ? this.username.substr(1) : this.username;
+                var form_data = new FormData();
+                form_data.append('cart', 0);
+                form_data.append('email', this.email);
+                form_data.append('system', 'Instagram');
+                form_data.append('service', 'Followers');
+                form_data.append('type', 't1');
+                form_data.append('count', '10');
+                form_data.append('username', username);
+                axios.post('create_test_order_v2.php', form_data).then((response) => {
+                    switch(response.data.result) {
+                        case 'Error': {
+                            switch(+response.data.error_code) {
+                                case 101: { this.errors.general = response.data.text; } break;
+                                case 102: { this.errors.email = response.data.text; } break;
+                                case 103: { this.errors.general = response.data.text; } break;
+                                case 104: { this.errors.general = response.data.text; } break;
+                                case 201: { this.errors.username = response.data.text; } break;
+                                case 202: { this.errors.username = response.data.text; } break;
+                                case 203: { this.errors.username = response.data.text; } break;
+                                case 301: { this.errors.general = response.data.text; } break;
                             }
-                        } else {
-                            this.errors.username = 'Please, enter the correct username and try again.';
-                        }
-                        this.disabled = false;
-                    });
-                } else {
-                    this.errors.username = 'Fill this field!';
+                        } break;
+                        case 'Ok': {
+                            this.success = true;
+                        } break;
+                    }
+                }).catch((response) => {}).then(() => {
                     this.disabled = false;
-                }
+                });
             },
             reset() {
                 this.username = '';
