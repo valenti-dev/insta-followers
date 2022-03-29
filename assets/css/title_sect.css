@@ -12,17 +12,35 @@
     line-height: 1.235;
     font-size: 2.875em;
     margin: 0 auto 0.325em;
+
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
 }
 .title_sect .row2 {
     line-height: 1.575;
     font-size: 1.125em;
     margin: 0 auto 2em;
+
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: both;
 }
 .title_sect .row2:last-child {
     margin-bottom: 0;
 }
 .title_sect .row3 {
     margin: 0 auto 3.125em;
+
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-delay: 2.3s;
+    animation-fill-mode: both;
 }
 .title_sect .row3:last-child {
     margin-bottom: 0;
@@ -35,6 +53,12 @@
     display: flex;
     margin: 0 -1em;
     justify-content: center;
+
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-delay: 3.3s;
+    animation-fill-mode: both;
 }
 .title_sect .row4 .option {
     display: flex;
