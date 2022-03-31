@@ -26,9 +26,8 @@
 .banner_sect .row1 .line2 {
     font-size: 1.125em;
     line-height: 1.58;
-    max-width: 27.6em;
+    /*max-width: 27.6em;*/
     margin: 0 0 2.25em;
-
     opacity: 0;
     animation-name: show;
     animation-duration: 1s;
