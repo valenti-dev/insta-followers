@@ -45,7 +45,9 @@
             axios.post('review_list.php', form_data).then((response) => {
                 switch(response.data.result) {
                     case 'Ok': {
-                        this.reviews = response.data.data;
+                        if(response.data.data) {
+                            this.reviews = response.data.data;
+                        }
                     } break;
                 }
             });
