@@ -3,6 +3,9 @@ let mix = require('laravel-mix');
 mix.js('assets/js/app.js', 'public/js')
     .vue()
     .copyDirectory('assets/img', 'public/img')
+    .options({
+        processCssUrls: false,
+    })
     .css('assets/css/styles.css', 'public/css')
     .css('assets/css/header.css', 'public/css')
     .css('assets/css/footer.css', 'public/css')

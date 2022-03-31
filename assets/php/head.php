@@ -8,7 +8,7 @@ $styles = [];
     <title><?= isset($title) ? $title : ''; ?></title>
     <meta name="description" content="<?= isset($description) ? $description : ''; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

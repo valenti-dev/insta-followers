@@ -19,13 +19,13 @@ html, body {
     opacity: 1;
 }
 .body.home_page {
-    background-image: url(/img/home-bg.png);
+    background-image: url(../img/home-bg.png);
 }
 .body.terms_page {
-    background-image: url(/img/terms-bg.svg);
+    background-image: url(../img/terms-bg.svg);
 }
 .body.support_page {
-    background-image: url(/img/support-bg.png);
+    background-image: url(../img/support-bg.png);
 }
 .main {
     display: flex;

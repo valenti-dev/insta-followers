@@ -69,7 +69,7 @@
         padding: 0;
         margin: 0;
         border: none;
-        background-image: url(/img/icons/close-75a149.svg);
+        background-image: url(../img/icons/close-75a149.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

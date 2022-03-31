@@ -2,7 +2,7 @@
     padding: 13.75em 0 8.5em;
     background-size: 120em auto;
     background-position: center;
-    background-image: url(/img/get_started_sect/bg.png);
+    background-image: url(../img/get_started_sect/bg.png);
     background-repeat: no-repeat;
     margin-top: -6.5em;
 }
@@ -29,7 +29,7 @@
     .get_started_sect {
         margin-top: -5em;
         padding: 5.75em 0 22.875em;
-        background-image: url(/img/get_started_sect/bg-mob.png);
+        background-image: url(../img/get_started_sect/bg-mob.png);
         background-size: 100% auto;
     }
     .get_started_sect .row1 {

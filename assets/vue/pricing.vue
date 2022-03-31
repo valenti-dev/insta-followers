@@ -223,7 +223,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        background-image: url(/img/icons/check-mark-81b3ff.svg);
+        background-image: url(../img/icons/check-mark-81b3ff.svg);
         margin-right: 0.75em;
     }
     .plan .attr:last-child {

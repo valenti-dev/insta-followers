@@ -88,7 +88,7 @@
         padding: 4.375em 0 5.25em;
         background-size: 100% 100%;
         background-position: center;
-        background-image: url(/img/questions_sect/bg-mob.png);
+        background-image: url(../img/questions_sect/bg-mob.png);
         background-repeat: no-repeat;
     }
     .questions_sect .row1 {

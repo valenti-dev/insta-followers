@@ -119,11 +119,11 @@
     }
     .slick-prev {
         left: -2em;
-        background-image: url(/img/icons/chevron-left-ccd0e1.svg);
+        background-image: url(../img/icons/chevron-left-ccd0e1.svg);
     }
     .slick-next {
         left: 100%;
-        background-image: url(/img/icons/chevron-right-ccd0e1.svg);
+        background-image: url(../img/icons/chevron-right-ccd0e1.svg);
     }
     .slick-dots {
         display: flex !important;

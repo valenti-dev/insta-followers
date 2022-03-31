@@ -79,7 +79,7 @@
     /*terms_page*/
     .terms_page .deals_sect {
         padding: 3.75em 0 3em;
-        background-image: url(/img/deals_sect/bg-mob.svg);
+        background-image: url(../img/deals_sect/bg-mob.svg);
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center top;

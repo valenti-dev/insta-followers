@@ -80,7 +80,7 @@
     .prices_text_sect {
         padding: 4.75em 0 2.5em;
         background-size: 100% auto;
-        background-image: url(/img/prices_text_sect/bg-mob.svg);
+        background-image: url(../img/prices_text_sect/bg-mob.svg);
     }
     .prices_text_sect:after {
         top: 140em;

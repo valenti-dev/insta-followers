@@ -2,7 +2,7 @@
     padding: 9.25em 0 4.75em;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/contact_sect/bg.png);
+    background-image: url(../img/contact_sect/bg.png);
     flex-grow: 1;
     margin-top: -6.5em;
 }
@@ -20,7 +20,7 @@
     .contact_sect {
         margin-top: -5em;
         padding: 5.75em 0 21.625em;
-        background-image: url(/img/contact_sect/bg-mob.png);
+        background-image: url(../img/contact_sect/bg-mob.png);
         background-position: center bottom;
         background-repeat: no-repeat;
     }

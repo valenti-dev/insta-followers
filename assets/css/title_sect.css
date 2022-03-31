@@ -2,7 +2,7 @@
     padding: 9.75em 0 4.25em;
     background-position: center;
     background-size: 120em auto;
-    background-image: url(/img/title_sect/bg.svg);
+    background-image: url(../img/title_sect/bg.svg);
     background-repeat: no-repeat;
     margin: -6.5em 0 0;
     text-align: center;
@@ -73,7 +73,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/icons/check-mark-81b3ff.svg);
+    background-image: url(../img/icons/check-mark-81b3ff.svg);
 }
 .title_sect .row4 .option .label {
     font-weight: 500;

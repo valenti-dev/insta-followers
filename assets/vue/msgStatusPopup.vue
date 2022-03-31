@@ -82,7 +82,7 @@
         padding: 0;
         margin: 0;
         border: none;
-        background-image: url(/img/icons/close-c8d1da.svg);
+        background-image: url(../img/icons/close-c8d1da.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

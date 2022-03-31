@@ -90,7 +90,7 @@
         right: 1.25em;
         top: 50%;
         transform: translate(0, -50%);
-        background-image: url(/img/icons/arrow-right-fff.svg);
+        background-image: url(../img/icons/arrow-right-fff.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
