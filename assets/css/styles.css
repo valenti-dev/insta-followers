@@ -16,8 +16,14 @@ html, body {
     overflow: hidden;
     font-size: 0.8333333333vw;
 }
+.body * {
+    animation-play-state: paused;
+}
 .body.loaded {
     opacity: 1;
+}
+.body.loaded * {
+    animation-play-state: running;
 }
 .body.home_page {
     background-image: url(../img/home-bg.png);
