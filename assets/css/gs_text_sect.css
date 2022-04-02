@@ -1,0 +1,39 @@
+.gs_text_sect {
+    padding: 3.75em 0 4.5em;
+}
+.gs_text_sect .row1 {
+    font-size: 2.875em;
+    margin: 0 0 0.4em;
+    line-height: 1.235;
+}
+.gs_text_sect .row2 {
+    line-height: 1.785;
+}
+.gs_text_sect .row2 img {
+    display: block;
+    max-width: 100%;
+    margin: 3.5em auto;
+    border-radius: 0.625em;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+.gs_text_sect .row2 img:hover {
+    box-shadow: 0 0 2em 0.625em #81B3FF;
+}
+.gs_text_sect .row2 img:last-child {
+    margin-bottom: 0;
+}
+@media(max-width: 767px) {
+    .gs_text_sect {
+        padding: 3.75em 0;
+    }
+    .gs_text_sect .row1 {
+        font-size: 1.625em;
+    }
+    .gs_text_sect .row2 img {
+        margin: 2em auto;
+    }
+    .gs_text_sect .row2 img:last-child {
+        margin-bottom: 0;
+    }
+}

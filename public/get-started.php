@@ -23,4 +23,22 @@ $styles['get_started_sect'] = [
     'href' => '/css/get_started_sect.css',
 ];
 ?>
+<section class="gs_text_sect"><div class="wrap">
+        <h2 class="row1">About company</h2>
+        <div class="row2">
+            <p>
+                Poprey knows how to buy Instagram likes safely with fast delivery. The social network Instagram has become an excellent platform for small or medium-sized business owners. Because the right approach allows you to attract the attention of thousands and thousands of potential buyers. It is only important to interest the public and creates a popular account. Research has shown that modern users pay more attention to content with real likes or views.
+            </p>
+            <p>
+                But what if you are just starting on Instagram and you need real likes? You can buy real Instagram likes! Thanks to innovative methods and, most importantly, high-quality service, you can get a lot of followers or new subscribers. Such a decision of buying Instagram likes can be very effective. Because the Poprey service offers to do everything simply, efficiently. It doesn't matter if you need the attention of other members of the interest from real buyers. You can buy Instagram Likes here for any purpose!
+            </p>
+            <img src="/img/gs_text_sect/img.png" alt="">
+        </div>
+    </div></section>
+<?
+$styles['gs_text_sect'] = [
+        'rel' => 'stylesheet',
+    'href' => '/css/gs_text_sect.css',
+];
+?>
 <? include '../assets/php/foot.php'; ?>
