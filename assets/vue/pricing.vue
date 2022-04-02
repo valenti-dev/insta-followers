@@ -152,6 +152,13 @@
         padding: 1em 1.125em 5.625em;
         box-sizing: border-box;
         position: relative;
+        transition-property: transform, box-shadow;
+        transition-duration: 0.3s;
+    }
+    .plan:hover {
+        z-index: 1;
+        transform: scale(1.1);
+        box-shadow: 0 0 2em 0.625em #81B3FF;
     }
     .pricing_page .plan {
         border: 1px solid #E7EFF6;
