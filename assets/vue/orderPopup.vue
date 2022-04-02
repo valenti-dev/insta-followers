@@ -37,7 +37,7 @@
                 <template v-else>
                     <div class="title">Instagram {{ plan.count }} Followers</div>
                     <div class="desc">
-                        You buy {{ plan.count }} followers for {{ plan.price }}{{ $root.user_info.sym_b }} for one.
+                        You buy {{ plan.count }} followers for {{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }} for one.
                     </div>
                     <div class="fields_wrap">
                         <field label="Instagram Username:" :error="step1.errors.username">
@@ -53,9 +53,9 @@
             <template v-else-if="step === 2">
                 <div class="title">Instagram {{ plan.count }} Followers</div>
                 <div class="desc">
-                    You buy {{ plan.count }} followers for {{ plan.price }}{{ $root.user_info.sym_b }} for one.
+                    You buy {{ plan.count }} followers for {{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }} for one.
                 </div>
-                <butt class="go_butt" @click="get_payment_methods" :disabled="disabled">Choose payment method for {{ $root.user_info.sym_b }}{{ plan.price }}</butt>
+                <butt class="go_butt" @click="get_payment_methods" :disabled="disabled">Choose payment method for {{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }}</butt>
                 <div class="error" v-if="step2.error">{{ step2.error }}</div>
             </template>
             <template v-else-if="step === 3">
@@ -69,7 +69,7 @@
                         <div class="info">
                             <div class="name">{{ method.name }}</div>
                             <div class="price">
-                                {{ $root.user_info.sym_b }}{{ method.price_local }}+{{ $root.user_info.sym_b }}{{method.tax_local}}
+                                {{ $root.user_info.sym_b }}{{ method.price_local }}{{ $root.user_info.sym_a }}+{{ $root.user_info.sym_b }}{{method.tax_local}}{{ $root.user_info.sym_a }}
                             </div>
                         </div>
                         <div class="discount">{{ method.discount }}%</div>

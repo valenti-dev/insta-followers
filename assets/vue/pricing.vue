@@ -11,7 +11,7 @@
                     <div class="count_insc">followers</div>
                 </div>
                 <div class="price_wrap">
-                    <div class="price">{{ $root.user_info.sym_b }} {{ plan.price }}</div>
+                    <div class="price">{{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }}</div>
                     <div class="price_insc">
                         (discount auto-applied)
                     </div>
