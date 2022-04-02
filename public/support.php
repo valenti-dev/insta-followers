@@ -1,7 +1,7 @@
 <?
 $page_class = 'support_page';
-$title = 'How can we help you?';
-$description = '';
+$title = 'How Can We Help You? Support';
+$description = 'If you have any questions, please reach out to our support team. You can get in touch with us through the complaint form';
 ?>
 <? include '../assets/php/head.php'; ?>
 <section class="title_sect">

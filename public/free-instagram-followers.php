@@ -1,7 +1,7 @@
 <?
 $page_class = 'free_followers_page';
-$title = 'Free Instagram Followers';
-$description = '';
+$title = 'Free Instagram Followers - Get More With Followerus';
+$description = 'Free Instagram followers without login required and no password needed. Our service helps to quickly and easily receive 10 followers with an instant start.';
 ?>
 <? include '../assets/php/head.php'; ?>
     <section class="title_sect">

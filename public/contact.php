@@ -1,7 +1,7 @@
 <?
 $page_class = 'contact_page';
-$title = 'Contact';
-$description = '';
+$title = 'Contact To Get 100% Real & Active Followers';
+$description = 'Our contacts to help you. If you have any questions, please reach out to our support team!';
 ?>
 <? include '../assets/php/head.php'; ?>
 <section class="contact_sect">

@@ -1,7 +1,7 @@
 <?
 $page_class = 'pricing_page';
-$title = 'Simple Pricing';
-$description = '';
+$title = 'Pricing - The Best Offer - Followerus';
+$description = 'The most powerful IG service with cheap price and rich experience. Choose the best offer for your account. Available online support.';
 ?>
 <? include '../assets/php/head.php'; ?>
     <section class="title_sect">

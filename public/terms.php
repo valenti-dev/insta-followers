@@ -1,7 +1,7 @@
 <?
 $page_class = 'terms_page';
-$title = 'Terms & Conditions';
-$description = '';
+$title = 'Terms - Followerus';
+$description = 'By using our Services, you agree to these terms. We encourage you to learn more about the terms and conditions of using Followerus\'s service';
 ?>
 <? include '../assets/php/head.php'; ?>
     <section class="title_sect">

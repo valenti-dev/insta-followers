@@ -1,7 +1,7 @@
 <?
 $page_class = 'home_page';
-$title = 'Buy Instagram followers and grow your account faster';
-$description = '';
+$title = 'Buy Instagram Followers - Cheap and Easy 2022';
+$description = 'Buy Instagram followers for your profile. Start working instantly. Get real-looking top-quality followers with no password needed. See results in 1 hour';
 ?>
 <? include '../assets/php/head.php'; ?>
 <section class="banner_sect">

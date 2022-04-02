@@ -1,7 +1,7 @@
 <?
 $page_class = 'get_started_page';
-$title = 'Get started';
-$description = '';
+$title = 'Get Started - How Does Followerus Work?';
+$description = 'We tell you how to get started with a broad selection of high-quality services and excellent customer support';
 ?>
 <? include '../assets/php/head.php'; ?>
     <section class="get_started_sect">
