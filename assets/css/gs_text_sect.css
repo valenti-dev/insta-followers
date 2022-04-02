@@ -29,6 +29,7 @@
     }
     .gs_text_sect .row1 {
         font-size: 1.625em;
+        text-align: center;
     }
     .gs_text_sect .row2 img {
         margin: 2em auto;
