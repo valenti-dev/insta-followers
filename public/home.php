@@ -26,7 +26,7 @@ $description = 'Buy Instagram followers for your profile. Start working instantl
                     <div class="label">24/7 support</div>
                 </div>
                 <div class="option">
-                    <div class="label">From $3!</div>
+                    <div class="label">From $1.3!</div>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ $styles['banner_sect'] = [
         <div class="row3">
             <div class="item">
                 <div class="icon_wrap">
-                    <img class="icon" alt="" src="/img/how_work_sect/icon1.svg">
+                    <img class="icon" alt="icon1" src="/img/how_work_sect/icon1.svg">
                 </div>
                 <div class="text_wrap">
                     <div class="title">Select the required service package.</div>
@@ -58,7 +58,7 @@ $styles['banner_sect'] = [
             </div>
             <div class="item">
                 <div class="icon_wrap">
-                    <img class="icon" alt="" src="/img/how_work_sect/icon2.svg">
+                    <img class="icon" alt="icon2" src="/img/how_work_sect/icon2.svg">
                 </div>
                 <div class="text_wrap">
                     <div class="title">Specify your login and the number of followers.</div>
@@ -69,7 +69,7 @@ $styles['banner_sect'] = [
             </div>
             <div class="item">
                 <div class="icon_wrap">
-                    <img class="icon" alt="" src="/img/how_work_sect/icon3.svg">
+                    <img class="icon" alt="icon3" src="/img/how_work_sect/icon3.svg">
                 </div>
                 <div class="text_wrap">
                     <div class="title">Make payment.</div>
@@ -93,10 +93,10 @@ $styles['how_work_sect'] = [
 <section class="buy_sect">
     <div class="wrap">
         <h2 class="row1">
-            Buy Instagram Followers with Instant Delivery
+            Buy Instagram Followers Standard or Premium Quality
         </h2>
         <div class="row2">
-            At Namesite, you can buy Instagram followers quickly, safely and easily with just a few clicks. See our deals below!
+            At Followerus you can increase your Instagram popularity
         </div>
         <pricing :limit="4" class="row3"></pricing>
         <div class="row4">
@@ -112,14 +112,14 @@ $styles['buy_sect'] = [
 ?>
 <section class="deals_sect">
     <div class="wrap">
-        <h2 class="row1">Sitename has been Featured in</h2>
+        <h2 class="row1">Our reputation</h2>
         <div class="row2">
-            At Namesite, you can buy Instagram followers quickly, safely and easily with just a few clicks. See our deals below!
+            We are the platform, trusted by more than 75% of top 100 influencers companies.
         </div>
         <div class="row3">
             <? for ($i = 1; $i <= 12; $i++) : ?>
                 <div class="item">
-                    <img class="img" src="/img/deals_sect/image-<?= $i; ?>.png" alt="">
+                    <img class="img" src="/img/deals_sect/image-<?= $i; ?>.png" alt="image-<?= $i; ?>">
                 </div>
             <? endfor; ?>
         </div>
@@ -148,7 +148,7 @@ $styles['deals_sect'] = [
                         <?= $item['question']; ?>
                     </div>
                     <div class="toggle">
-                        <img class="icon" alt="" src="/img/icons/chevron-bottom-fff.svg">
+                        <img class="icon" alt="get followers" src="/img/icons/chevron-bottom-fff.svg">
                     </div>
                 </div>
                 <div class="item_b">
@@ -172,7 +172,7 @@ $styles['questions_sect'] = [
         <div class="row1">
             <div class="item">
                 <h2 class="title">Why Do You Need to <b>Buy Instagram Followers</b> and What Benefits Can It Bring?</h2>
-                <img class="image" alt="" src="/img/img_text_sect/img1.png">
+                <img class="image" alt="buying IG followers" src="/img/img_text_sect/img1.png">
                 <div class="desc">
                     <p>Every user of the social network met profiles, the number of subscribers of which goes off scale, and dreamed of the same glory. It turns out that for this, it is not necessary to be a famous blogger or a movie and TV star. Instagram's promotion can help in the realization of this dream.</p>
                     <p>A subscriber is a person or account that is interested in viewing content, can create comment activity, and is potentially a customer. Accounts are divided into organic, which came because of their own desire and great interest in the product, and special, which came with the help of specialized services. But do not think that artificially attracted followers, just like organic ones, cannot be interested in the idea of ​​​​the page owner or the product offered. In the end, the right good or service will always find its consumer, but sometimes it needs a push.</p>
@@ -190,7 +190,7 @@ $styles['questions_sect'] = [
             </div>
             <div class="item">
                 <h2 class="title">How to Get Instagram Followers?</h2>
-                <img class="image" alt="" src="/img/img_text_sect/img2.png">
+                <img class="image" alt="buy 100 Instagram followers" src="/img/img_text_sect/img2.png">
                 <div class="desc">
                     <p>Instagram is a trendy network for business and creativity, but before gaining recognition, you need to attract a lot of live followers and promote the account. Of course, you can do it yourself, but over time you will realize that you can no longer cope. And then, if you want to quickly add subscribers in large numbers, you need to look for paid services where you can do this.</p>
                     <p>To <b>buy Instagram followers</b> you should make your account public and connect it to other social media profiles. Decide on a topic and target audience so important information will get to interested people. Then provide starter content and start searching for subscribers.</p>
@@ -200,7 +200,7 @@ $styles['questions_sect'] = [
             </div>
             <div class="item">
                 <h2 class="title">Why Choose Our Paid Services?</h2>
-                <img class="image" alt="" src="/img/img_text_sect/img3.png">
+                <img class="image" alt="Instagram followers by real people" src="/img/img_text_sect/img3.png">
                 <div class="desc">
                     <p>All methods of promotion differ primarily in the quality of work. Attracting subscribers can cost some money, which you spent on creating accounts, advertising & promoting your own page, and technical support. At the same time, all this helps to increase prestige and profitability. As for free programs and knowhow, they are often ineffective. You won’t be able to get free followers, but it’s easy to spend precious time.</p>
                     <p>At best, suspicious sites will first force you to subscribe to hundreds of followers or put thousands of likes. This method is absolutely not suitable for self-respecting companies, because instant attraction of followers on Instagram will not work out that way, but people's news feed will be filled with various garbage. Will there be trust in an organization that is marked on the pages of strange girls and guys? Obviously not.</p>
@@ -225,21 +225,6 @@ $styles['questions_sect'] = [
 $styles['img_text_sect'] = [
     'rel' => 'stylesheet',
     'href' => '/css/img_text_sect.css',
-];
-?>
-<section class="reviews_sect">
-    <div class="wrap">
-        <h2 class="row1">Reviews</h2>
-        <div class="row2">
-            Have a different question about how Likes.io works or the pricing plans available? Get in touch with one of our specialists.
-        </div>
-        <reviews class="row3"></reviews>
-    </div>
-</section>
-<?
-$styles['reviews_sect'] = [
-    'rel' => 'stylesheet',
-    'href' => '/css/reviews_sect.css',
 ];
 ?>
 <? include '../assets/php/foot.php'; ?>

@@ -6,9 +6,9 @@ $description = 'If you have any questions, please reach out to our support team.
 <? include '../assets/php/head.php'; ?>
 <section class="title_sect">
     <div class="wrap">
-        <h1 class="row1">How can we help you?</h1>
+        <h1 class="row1">Support center.</h1>
         <div class="row2">
-            Here you will find answers to any questions you may have.
+            Here you can ask any questions you may have.
         </div>
         <div class="row3">
             <butt class="go_butt" href="/get-started">Get Started</butt>
@@ -24,48 +24,42 @@ $styles['title_sect'] = [
 <section class="support_items_sect">
     <div class="wrap">
         <div class="row1">
-            <a href="#" class="item">
+            <div class="item">
                 <div class="icon_wrap">
                     <img class="icon" alt="" src="/img/support_items_sect/icon-1.svg">
                 </div>
-                <div class="name">Getting Started</div>
-                <div class="count">5 articles</div>
-            </a>
-            <a href="#" class="item">
+                <div class="name">How to Start</div>
+            </div>
+            <div class="item">
                 <div class="icon_wrap">
                     <img class="icon" alt="" src="/img/support_items_sect/icon-2.svg">
                 </div>
-                <div class="name">My Account</div>
-                <div class="count">5 articles</div>
-            </a>
-            <a href="#" class="item">
+                <div class="name">About Orders</div>
+            </div>
+            <div class="item">
                 <div class="icon_wrap">
                     <img class="icon" alt="" src="/img/support_items_sect/icon-3.svg">
                 </div>
                 <div class="name">Payment & Billing</div>
-                <div class="count">4 articles</div>
-            </a>
-            <a href="#" class="item">
+            </div>
+            <div class="item">
                 <div class="icon_wrap">
                     <img class="icon" alt="" src="/img/support_items_sect/icon-4.svg">
                 </div>
                 <div class="name">Security & Privacy</div>
-                <div class="count">2 articles</div>
-            </a>
-            <a href="#" class="item">
+            </div>
+            <div class="item">
                 <div class="icon_wrap">
                     <img class="icon" alt="" src="/img/support_items_sect/icon-5.svg">
                 </div>
-                <div class="name">Subscriptions</div>
-                <div class="count">1 article</div>
-            </a>
-            <a href="#" class="item">
+                <div class="name">About discount</div>
+            </div>
+            <div class="item">
                 <div class="icon_wrap">
                     <img class="icon" alt="" src="/img/support_items_sect/icon-6.svg">
                 </div>
-                <div class="name">Troubleshooting</div>
-                <div class="count">1 article</div>
-            </a>
+                <div class="name">Affiliate program</div>
+            </div>
         </div>
     </div>
 </section>

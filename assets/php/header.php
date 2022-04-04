@@ -6,7 +6,7 @@
             </div>
             <div class="right">
                 <button class="menu_burger" @click="header.opened = !header.opened">
-                    <img class="menu_burder_icon" alt="" src="/img/icons/menu-burger-292E43.svg">
+                    <img class="menu_burder_icon" alt="menu-burger" src="/img/icons/menu-burger-292E43.svg">
                 </button>
                 <div class="menu_wrap">
                     <ul class="menu">

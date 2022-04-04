@@ -313,9 +313,9 @@ $styles['terms_seo_sect'] = [
 ?>
     <section class="deals_sect">
         <div class="wrap">
-            <h2 class="row1">Sitename has been Featured in</h2>
+            <h2 class="row1">Our reputation</h2>
             <div class="row2">
-                At Namesite, you can buy Instagram followers quickly, safely and easily with just a few clicks. See our deals below!
+                We are the platform, trusted by more than 75% of top 100 influencers companies.
             </div>
             <div class="row3">
                 <? for ($i = 1; $i <= 12; $i++) : ?>

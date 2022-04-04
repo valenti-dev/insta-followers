@@ -62,7 +62,7 @@
                 <div class="title">Payment methods</div>
                 <div class="desc">Please choose payment method</div>
                 <div class="payment_methods_list">
-                    <div class="payment_method" v-for="(method, method_indx) in step3.methods" :class="method.discount > 0 ? 'red' : ''" @click="open_pay(method)">
+                    <div class="payment_method" v-for="(method, method_indx) in step3.methods" :class="method.discount > 0 ? 'red' : ''" @click="open_pay(method)" id="COIN">
                         <div class="logo_wrap">
                             <img class="logo" alt="" src="/img/payment_methods/default.png">
                         </div>

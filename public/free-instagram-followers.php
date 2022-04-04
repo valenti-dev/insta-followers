@@ -22,7 +22,7 @@ $styles['title_sect'] = [
     <section class="free_order_sect">
         <div class="wrap">
             <div class="row1" v-if="free_order.attention_opened">
-                <div class="text">Free <b>25 Instagram Followers</b> based on <b>Ads as a trial</b> of our services.</div>
+                <div class="text">Free <b>10 Instagram Followers</b> for your account without a survey!</div>
                 <button class="close_butt" @click="free_order.attention_opened = false;"></button>
             </div>
             <div class="row2">

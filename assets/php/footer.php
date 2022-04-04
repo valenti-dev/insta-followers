@@ -6,10 +6,7 @@
                     <logo type="white"></logo>
                 </div>
                 <div class="line2">
-                    Tel: +971599876543<br>
-                    E-mail: support@goread.io<br>
-                    Company: SOCIAL JOOL LLC ( 2112727), Sharjah Media City, Sharjah, UAE, Goread.io is not affiliated with Instagram, Facebook, or any Instagram third-party partners in any way.
-                    We are not authorized, endorsed, or sponsored by Instagram
+                    Copyright © 2022 Followerus.com All Rights Reserved.
                 </div>
             </div>
             <div class="col col2">
@@ -27,7 +24,8 @@
                     Get Started
                 </div>
                 <div class="line5">
-                    Buy some Instagram followers for as little as $3 with Upleap - the easiest way to grow your Instagram!
+                    Followerus is the #1 website that helps you to increase real-looking top-quality followers.<br>
+                    We are not sponsored,  administered by, or associated with Instagram.
                 </div>
                 <div class="line6">
                     <butt href="/pricing">Buy Now</butt>

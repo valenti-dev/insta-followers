@@ -8,8 +8,10 @@ $description = 'The most powerful IG service with cheap price and rich experienc
         <div class="wrap">
             <h1 class="row1">Simple Pricing</h1>
             <div class="row2">
+                <!--
                 Learn all about Upleap's pricing and buy Instagram followers for your accounts.<br>
                 We offer affordable, transparent pricing with Fast delivery!
+                -->
             </div>
             <div class="row3">
                 <butt class="go_butt" href="/get-started">Get Started</butt>
@@ -22,7 +24,7 @@ $description = 'The most powerful IG service with cheap price and rich experienc
                     <div class="label">24/7 support</div>
                 </div>
                 <div class="option">
-                    <div class="label">From $3!</div>
+                    <div class="label">From $1.3!</div>
                 </div>
             </div>
         </div>
@@ -36,11 +38,10 @@ $styles['title_sect'] = [
     <section class="buy_sect">
         <div class="wrap">
             <h2 class="row1">
-                Looking to buy some followers?
+                Looking to get some followers
             </h2>
             <div class="row2">
-                Here's how much Upleap costs!<br>
-                Our site-wide discounts are applied automatically at checkout.
+                How much followers costs? Сhoose the appropriate option
             </div>
             <pricing class="row3"></pricing>
         </div>

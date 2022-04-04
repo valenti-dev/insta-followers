@@ -21,9 +21,8 @@
                     <div class="attr">Fast delivery</div>
                     <div class="attr">24/7 Support</div>
                     <div class="attr">Cheapest</div>
-                    <div class="attr">Standard Quality Followers</div>
                 </div>
-                <butt class="go_butt" @click="order_plan = plan">Buy Follower Now</butt>
+                <butt class="go_butt" @click="order_plan = plan" :id="plan.butt_id">Buy Follower Now</butt>
             </div>
         </div>
         <order-popup v-if="order_plan" :plan="order_plan" @close="order_plan = null"></order-popup>
@@ -80,6 +79,7 @@
                                     price: plan.types[type_k].price,
                                     discount: plan.types[type_k].discount,
                                     type_key: type_k,
+                                    butt_id: (type_k === 't1' ? 'NORM' : 'PREMIUM')+plan.count+'F',
                                 });
                             }
                         }
@@ -95,7 +95,6 @@
                     //this.order_plan = this.filtered_plans[0];
                 }
             },
-
         },
     }
 </script>

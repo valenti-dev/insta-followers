@@ -16,7 +16,7 @@
                 <checkbox v-model="news_accept"></checkbox>
                 <span class="accept_text">I accept to receive news and promotion e-mails.</span>
             </div>
-            <butt class="go_butt" @click="submit" :disabled="disabled">Get Free Followers!</butt>
+            <butt class="go_butt" @click="submit" :disabled="disabled" id="FREE10F">Get Free Followers!</butt>
             <div class="error" v-if="errors.general">{{ errors.general }}</div>
         </div>
         <pay-status-popup v-if="success !== null" :success="success" @close="reset"></pay-status-popup>
