@@ -35,12 +35,7 @@
 .prices_text_sect .row1 .item {
     padding: 2.75em 0;
     border-bottom: 1px solid #E7EFF6;
-    margin: 0 -1em;
-    display: flex;
-    align-items: center;
-}
-.prices_text_sect .row1 .item:nth-child(2n) {
-    flex-direction: row-reverse;
+    margin: 0;
 }
 .prices_text_sect .row1 .item:first-child {
     padding-top: 0;
@@ -49,9 +44,21 @@
     border-bottom: none;
 }
 .prices_text_sect .row1 .item .col {
-    box-sizing: border-box;
-    width: 50%;
-    padding: 0 1em;
+    display: inline;
+}
+.prices_text_sect .row1 .item .col:nth-child(1) {
+    float: right;
+    width: calc(50% - 1em);
+    margin: 0 0 1em 2em;
+}
+.prices_text_sect .row1 .item:nth-child(2n) .col:nth-child(1) {
+    float: left;
+    margin: 0 2em 1em 0;
+}
+.prices_text_sect .row1 .item .col:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 .prices_text_sect .row1 .item .title {
     line-height: 1.465;
@@ -90,15 +97,19 @@
     }
     .prices_text_sect .row1 .item {
         padding: 2.25em 0;
-        display: block;
+        display: flex;
         margin: 0;
+        flex-direction: column-reverse;
     }
     .prices_text_sect .row1 .item:first-child {
         padding-top: 0;
     }
-    .prices_text_sect .row1 .item .col {
+    .prices_text_sect .row1 .item:nth-child(n) .col:nth-child(n) {
         padding: 0;
         width: 100%;
+        display: block;
+        margin: 0;
+        float: none;
     }
     .prices_text_sect .row1 .item .title {
         font-size: 1.625em;

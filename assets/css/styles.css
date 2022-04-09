@@ -59,6 +59,9 @@ a {
         font-size: 1.2598vw;
     }
 }*/
+ol, ul {
+    padding-left: 1em;
+}
 @media(max-width: 1199px) {
     .body {
         font-size: 1.2598vw;
