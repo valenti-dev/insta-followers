@@ -303,7 +303,6 @@ $styles['free_order_sect'] = [
                         You don't have to look for and attract them for months or years.
                         Make your Instagram account super progressive and successful!
                     </p>
-                    <img alt="" src="/img/seo_text_sect/img2.png">
                 </div>
             </div>
         </div>

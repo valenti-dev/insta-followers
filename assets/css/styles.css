@@ -34,6 +34,9 @@ html, body {
 .body.support_page {
     background-image: url(../img/support-bg.png);
 }
+.body.article_page {
+    background-image: url(../img/article-bg.png);
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -60,7 +63,7 @@ a {
     }
 }*/
 ol, ul {
-    padding-left: 1em;
+    padding-left: 1.5em;
 }
 @media(max-width: 1199px) {
     .body {
@@ -76,7 +79,8 @@ ol, ul {
     }
     .body.home_page,
     .body.terms_page,
-    .body.support_page {
+    .body.support_page,
+    .body.article_page {
         background-image: none;
     }
 }

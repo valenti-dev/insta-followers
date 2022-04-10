@@ -12,8 +12,9 @@
                     <ul class="menu">
                         <li class="menu_item <?= (isset($_GET['q']) && $_GET['q'] == 'pricing') ? 'active' : ''; ?>"><a href="/pricing" class="menu_item_anchor"><span class="menu_item_label">Pricing</span></a></li>
                         <li class="menu_item <?= (isset($_GET['q']) && $_GET['q'] == 'free-instagram-followers') ? 'active' : ''; ?>"><a href="/free-instagram-followers" class="menu_item_anchor"><span class="menu_item_label">Free Instagram Followers</span></a></li>
+                        <li class="menu_item <?= (isset($_GET['q']) && $_GET['q'] == 'blog') ? 'active' : ''; ?>"><a href="/blog" class="menu_item_anchor"><span class="menu_item_label">Blog</span></a></li>
                         <li class="menu_item <?= (isset($_GET['q']) && $_GET['q'] == 'contact') ? 'active' : ''; ?>"><a href="/contact" class="menu_item_anchor"><span class="menu_item_label">Contact</span></a></li>
-                        <li class="menu_item"><butt href="/pricing">Pricing</butt></li>
+                        <li class="menu_item"><butt href="/get-started">Get Started</butt></li>
                     </ul>
                 </div>
             </div>

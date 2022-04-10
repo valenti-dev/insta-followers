@@ -26,4 +26,7 @@ mix.js('assets/js/app.js', 'public/js')
     .css('assets/css/get_started_sect.css', 'public/css')
     .css('assets/css/reviews_sect.css', 'public/css')
     .css('assets/css/gs_text_sect.css', 'public/css')
+    .css('assets/css/blog_sect.css', 'public/css')
+    .css('assets/css/article_sect.css', 'public/css')
+    .css('assets/css/articles_sect.css', 'public/css')
     .disableNotifications();
