@@ -11,7 +11,7 @@ $description = '';
     <section class="article_sect">
         <div class="wrap">
             <div class="row1"><a href="/">Home</a> / <a href="/blog">Blog</a> / <?= $h1; ?></div>
-            <h2 class="row2"><?= $h1; ?></h2>
+            <h1 class="row2"><?= $h1; ?></h1>
             <div class="row3">
                 <div class="author">
                     <div class="photo" style="background-image: url(/img/article_sect/authors/author1.png);"></div>
