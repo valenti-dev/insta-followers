@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 0; padding: 0; background-color: #4A4A4A;">
 <div style="background-color: #ffffff; padding: 20px 36px 31px; border-radius: 10px; margin: 40px auto; width: 457px; max-width: 100%; box-sizing: border-box;">
-    <img alt="" src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/emails/completed.png" style="width: 278px; max-width: 100%; display: block; margin: 0 auto 44px;">
+    <img alt="" src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/emails/completed.jpg" style="width: 278px; max-width: 100%; display: block; margin: 0 auto 44px;">
     <h1 style="font-weight: 900; font-size: 32px; line-height: 1.235; color: #292E43; text-align: center; margin: 0 auto 19px; font-family: 'Zen Kaku Gothic Antique', sans-serif;">Automatic Likes completed</h1>
     <div style="line-height: 1.575; color: #81B2FF; text-align: center; font-size: 18px; font-family: 'Zen Kaku Gothic Antique', sans-serif; margin: 0 auto 25px; font-weight: 700;">
         Username
@@ -19,7 +19,7 @@
     <div style="background-color: #ECF5FD; padding: 16px; box-sizing: border-box; border-radius: 20px; line-height: 1.575; text-align: center; color: #292E43; font-size: 18px; font-family: 'Zen Kaku Gothic Antique', sans-serif; margin: 0 auto 26px;">100 Instagram Likes</div>
     <a href="#" style="display: flex; max-width: 100%; width: 241px; box-sizing: border-box; align-items: center; justify-content: space-between; padding: 0 16px 0 32px; background-color: #81B3FF; cursor: pointer; color: #ffffff; height: 60px; border-radius: 30px; text-decoration: none; line-height: 1.465; margin: 0 auto 11px;">
         <span style="font-family: 'Zen Kaku Gothic Antique', sans-serif; font-size: 16px; font-weight: 500; margin: auto auto auto 0">Extend</span>
-        <img alt="" src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/emails/butt-arrow.png" style="height: 26px">
+        <img alt="" src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/emails/butt-arrow.jpg" style="height: 26px; margin: auto 0 auto auto;">
     </a>
     <div style="text-align: center;">
         <a href="#" style="color: #9297AB; text-decoration-line: underline; line-height: 1.465; font-size: 16px; font-weight: 500; font-family: 'Zen Kaku Gothic Antique', sans-serif;">Unsubscribe</a>

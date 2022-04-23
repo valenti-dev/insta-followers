@@ -17,7 +17,7 @@
     </div>
     <a href="#" style="display: flex; max-width: 100%; width: 155px; box-sizing: border-box; align-items: center; justify-content: space-between; padding: 0 16px 0 32px; background-color: #81B3FF; cursor: pointer; color: #ffffff; height: 60px; border-radius: 30px; text-decoration: none; line-height: 1.465; margin: 0 auto;">
         <span style="font-family: 'Zen Kaku Gothic Antique', sans-serif; font-size: 16px; font-weight: 500; margin: auto auto auto 0">Reply</span>
-        <img alt="" src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/emails/butt-arrow.png" style="height: 26px">
+        <img alt="" src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/emails/butt-arrow.jpg" style="height: 26px; margin: auto 0 auto auto;">
     </a>
 </div>
 </body>
