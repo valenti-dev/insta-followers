@@ -2,7 +2,7 @@
 $page_class = 'blog_page';
 $title = 'Blog - Followerus';
 $description = 'Articles and publications';
-$canonical = '/blog';
+$canonical = '/blog/';
 ?>
 <? include '../../assets/php/head.php'; ?>
     <section class="title_sect">
