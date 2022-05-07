@@ -193,7 +193,7 @@
                             this.username = account.username;
                             this.email = this.step1.email;
                             this.save_account(account);
-                            this.step = 2;
+                            this.step = 3;
                             this.step3 = response.data.data;
                         } break;
                     }
@@ -337,7 +337,7 @@
         margin: 0 0 1.5em;
     }
     .accounts_list {
-        height: 17em;
+        max-height: 17em;
     }
     .error {
         font-size: 0.875em;
