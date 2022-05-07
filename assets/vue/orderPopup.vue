@@ -78,7 +78,7 @@
             </template>
             <div class="steps_wrap">
                 <div class="step" :class="{active: (step >= 1)}"></div>
-                <div class="step" :class="{active: (step >= 2)}"></div>
+                <!--<div class="step" :class="{active: (step >= 2)}"></div>-->
                 <div class="step" :class="{active: (step >= 3)}"></div>
             </div>
         </div>
