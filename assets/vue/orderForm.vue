@@ -31,7 +31,7 @@
                             <text-input v-model="step1.email" type="email" placeholder="Your E-mail Address"></text-input>
                         </field>
                     </div>
-                    <butt class="go_butt" @click="select_account" :disabled="disabled">Select Account</butt>
+                    <butt class="go_butt" @click="select_account" :disabled="disabled" :loading="loading">Select Account</butt>
                 </template>
                 <template v-else>
                     <div class="title">Instagram {{ plan.count }} Followers</div>
@@ -148,6 +148,8 @@
                 },
                 payment_methods: [],
                 disabled: false,
+                loading: null,
+                loading_interval: null,
             };
         },
         mounted() {
@@ -167,6 +169,13 @@
             //step1
             select_account() {
                 this.disabled = true;
+                this.loading = 1;
+                this.loading_interval = setInterval(() => {
+                    if(this.loading < 98) {
+                        this.loading += 2;
+                    }
+                }, 300);
+
                 var username = this.step1.username[0] === '@' ? this.step1.username.substr(1) : this.step1.username;
                 var form_data = new FormData();
                 form_data.append('cart', 0);
@@ -218,6 +227,14 @@
                     }
                 }).catch((response) => {}).then(() => {
                     this.disabled = false;
+                    if(this.loading_interval) {
+                        clearInterval(this.loading_interval);
+                        this.loading_interval = null;
+                    }
+                    this.loading = 100;
+                    setTimeout(() => {
+                        this.loading = null;
+                    }, 300);
                 });
             },
             rm_account(indx) {
