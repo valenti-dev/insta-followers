@@ -22,10 +22,9 @@
                     <div class="attr">24/7 Support</div>
                     <div class="attr">Cheapest</div>
                 </div>
-                <butt class="go_butt" @click="order_plan = plan" :id="plan.butt_id">Buy Follower Now</butt>
+                <butt class="go_butt" @click="order(plan)" :id="plan.butt_id">Buy Follower Now</butt>
             </div>
         </div>
-        <order-popup v-if="order_plan" :plan="order_plan" @close="order_plan = null"></order-popup>
     </div>
 </template>
 
@@ -45,7 +44,6 @@
             return {
                 plans: [],
                 selected_type: null,
-                order_plan: null,
             };
         },
         mounted() {
@@ -95,6 +93,17 @@
                     //this.order_plan = this.filtered_plans[0];
                 }
             },
+        },
+        methods: {
+            order(plan) {
+                var params = {
+                    'plan[count]': plan.count,
+                    'plan[price]': plan.price,
+                    'plan[type_key]': plan.type_key,
+                };
+                params = new URLSearchParams(params);
+                location.href = '/order/?'+params.toString();
+            }
         },
     }
 </script>

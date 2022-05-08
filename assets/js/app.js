@@ -4,6 +4,7 @@ import logo from '../vue/logo';
 import freeFollowersOrderForm from '../vue/freeFollowersOrderForm';
 import contactForm from '../vue/contactForm';
 import supportForm from '../vue/supportForm';
+import orderForm from '../vue/orderForm';
 ////////////////
 window.axios = require('axios').default;
 axios.defaults.withCredentials = true;
@@ -23,7 +24,6 @@ axios.interceptors.response.use((response) => {
 });
 ////////////
 import pricing from '../vue/pricing';
-import orderPopup from "../vue/orderPopup";
 import payStatusPopup from "../vue/payStatusPopup";
 import reviews from "../vue/reviews";
 var app = new Vue({
@@ -35,7 +35,7 @@ var app = new Vue({
         'free-followers-order-form': freeFollowersOrderForm,
         'contact-form': contactForm,
         'support-form': supportForm,
-        'order-form': orderPopup,
+        'order-form': orderForm,
         'pay-status-popup': payStatusPopup,
         reviews,
     },
