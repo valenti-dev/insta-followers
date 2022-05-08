@@ -74,6 +74,7 @@
                         <div class="discount">{{ method.discount }}%</div>
                     </div>
                 </div>
+                <butt class="go_back" @click="go_back">Go back</butt>
             </template>
             <div class="steps_wrap">
                 <div class="step" :class="{active: (step >= 1)}"></div>
@@ -252,6 +253,9 @@
                     location.href = method.url_to_pay;
                 }
             },
+            go_back() {
+                history.back();
+            },
         },
         watch: {
             'step1.username'() {
@@ -319,9 +323,13 @@
     .fields_wrap {
         margin: 0 0 2em;
     }
-    .butt.go_butt {
+    .butt.go_butt,
+    .butt.go_back {
         width: 100%;
         box-shadow: none;
+    }
+    .butt.go_back {
+        margin: 2em 0 0;
     }
     .steps_wrap {
         margin: 3.5em -0.875em 0;
