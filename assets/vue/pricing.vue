@@ -190,7 +190,7 @@
     .plan .discount_label {
         font-size: 0.875em;
     }
-    .plan .butt {
+    .plan .butt.go_butt {
         position: absolute;
         bottom: 0;
         left: 0;

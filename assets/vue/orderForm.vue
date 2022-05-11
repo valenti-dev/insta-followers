@@ -68,10 +68,18 @@
                         <div class="info">
                             <div class="name">{{ method.name }}</div>
                             <div class="price">
-                                {{ $root.user_info.sym_b }}{{ method.price_local }}{{ $root.user_info.sym_a }}+{{ $root.user_info.sym_b }}{{method.tax_local}}{{ $root.user_info.sym_a }}
+                                <template v-if="method.price_local">
+                                    {{ $root.user_info.sym_b }}{{ method.price_local }}{{ $root.user_info.sym_a }}
+                                </template>
+                                <template v-else>
+                                    ${{ method.price_usd }}
+                                </template>
+                                <template v-if="+method.tax">
+                                    +{{ $root.user_info.sym_b }}{{method.tax_local}}{{ $root.user_info.sym_a }}
+                                </template>
                             </div>
                         </div>
-                        <div class="discount">{{ method.discount }}%</div>
+                        <div class="discount" v-if="+method.discount">{{ method.discount }}%</div>
                     </div>
                 </div>
                 <butt class="go_back" @click="go_back">Go back</butt>
@@ -211,15 +219,17 @@
                             };
                             var methods = response.data.data.methods;
                             for(var key in methods) {
-                                params['methods['+key+'][name]'] = methods[key].name;
-                                params['methods['+key+'][discount]'] = methods[key].discount;
-                                params['methods['+key+'][tax]'] = methods[key].tax;
-                                params['methods['+key+'][price_usd]'] = methods[key].price_usd;
-                                params['methods['+key+'][tax_usd]'] = methods[key].tax_usd;
-                                params['methods['+key+'][price_local]'] = methods[key].price_local;
-                                params['methods['+key+'][tax_local]'] = methods[key].tax_local;
-                                params['methods['+key+'][url_to_pay]'] = methods[key].url_to_pay;
-                                params['methods['+key+'][modal]'] = methods[key].modal;
+                                if(methods[key]['available']) {
+                                    params['methods[' + key + '][name]'] = methods[key].name;
+                                    params['methods[' + key + '][discount]'] = methods[key].discount;
+                                    params['methods[' + key + '][tax]'] = methods[key].tax;
+                                    params['methods[' + key + '][price_usd]'] = methods[key].price_usd;
+                                    params['methods[' + key + '][tax_usd]'] = methods[key].tax_usd;
+                                    params['methods[' + key + '][price_local]'] = methods[key].price_local;
+                                    params['methods[' + key + '][tax_local]'] = methods[key].tax_local;
+                                    params['methods[' + key + '][url_to_pay]'] = methods[key].url_to_pay;
+                                    params['methods[' + key + '][modal]'] = methods[key].modal;
+                                }
                             }
                             params = new URLSearchParams(params);
                             location.href = '/order/step2?'+params.toString();
