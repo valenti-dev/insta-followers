@@ -113,6 +113,8 @@
             init_pay_methods: {
                 type: Array,
             },
+            init_payment_id: {
+            },
         },
         data() {
             return {
@@ -166,8 +168,11 @@
                 this.step = this.init_step;
             }
             if(this.init_pay_methods && this.init_pay_methods.length) {
-                console.log(this.init_pay_methods);
                 this.step3.methods = this.init_pay_methods;
+            }
+            if(this.init_payment_id) {
+                var order = JSON.parse(localStorage.getItem('payment_'+this.init_payment_id));
+                this.step3.methods = order.methods;
             }
         },
         methods: {
@@ -217,6 +222,7 @@
                             this.save_account(account);
                             var params = {
                             };
+                            /*
                             var methods = response.data.data.methods;
                             for(var key in methods) {
                                 if(methods[key]['available']) {
@@ -232,7 +238,10 @@
                                 }
                             }
                             params = new URLSearchParams(params);
-                            location.href = '/order/step2?'+params.toString();
+                            location.href = '/order/step2?'+params.toString();*/
+                            localStorage.setItem('payment_'+response.data.data.payment_id, JSON.stringify(response.data.data));
+                            location.href = '/order/step2?payment_id='+response.data.data.payment_id;
+                            //console.log(response.data.data);
                         } break;
                     }
                 }).catch((response) => {}).then(() => {
