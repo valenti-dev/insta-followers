@@ -5,7 +5,7 @@
         </div>
         <div class="plans_wrap">
             <div class="plan" v-for="plan in filtered_plans">
-                <div class="discount"><span class="discount_label">Save {{ plan.discount }}%</span></div>
+                <div class="discount" v-if="+plan.discount"><span class="discount_label">Save {{ plan.discount }}%</span></div>
                 <div class="count_wrap">
                     <div class="count">{{ plan.count }}</div>
                     <div class="count_insc">followers</div>
