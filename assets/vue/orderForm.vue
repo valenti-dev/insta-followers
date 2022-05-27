@@ -13,7 +13,7 @@
                                 <div>
                                     <div class="account" v-for="(acc, acc_indx) in accounts" :class="step1.username === acc.username ? 'selected' : ''" @click="step1.username = acc.username">
                                         <div class="info">
-                                            <div class="thumb" :style="{ 'background-image': 'url('+acc.thumb+')'}"></div>
+                                            <div class="thumb" :style="{ 'background-image': 'url('+avatar_url(acc.thumb)+')'}"></div>
                                             <div class="username">{{ acc.username }}</div>
                                         </div>
                                         <div class="actions">
@@ -46,7 +46,7 @@
                             <text-input v-model="step1.email" type="email" placeholder="Your E-mail Address"></text-input>
                         </field>
                     </div>
-                    <butt class="go_butt" @click="select_account" :disabled="disabled">Select Account</butt>
+                    <butt class="go_butt" @click="select_account" :disabled="disabled" :loading="loading">Select Account</butt>
                 </template>
             </template>
             <template v-else-if="step === 2">
@@ -291,6 +291,12 @@
             },
             go_back() {
                 history.back();
+            },
+            avatar_url(api_url) {
+                var params = new URLSearchParams({
+                    url: api_url,
+                });
+                return '/api/avatar.php?'+params;
             },
         },
         watch: {
