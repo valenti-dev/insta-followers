@@ -5,7 +5,7 @@
                 <template v-if="accounts.length && !step1.new_account">
                     <div class="title">Choose account</div>
                     <div class="desc">
-                        <a href="#" @click.prevent="step1.new_account = true">Add account</a>
+                        <a href="#" @click.prevent="step1.new_account = true">Add an account</a>
                     </div>
                     <div class="accounts_list_wrap">
                         <div class="accounts_list">
