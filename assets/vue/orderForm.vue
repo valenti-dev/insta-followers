@@ -5,7 +5,7 @@
                 <template v-if="accounts.length && !step1.new_account">
                     <div class="title">Choose account</div>
                     <div class="desc">
-                        <a href="#" @click.prevent="step1.new_account = true">Choose account</a>
+                        <a href="#" @click.prevent="step1.new_account = true">Add account</a>
                     </div>
                     <div class="accounts_list_wrap">
                         <div class="accounts_list">
@@ -31,12 +31,13 @@
                             <text-input v-model="step1.email" type="email" placeholder="Your E-mail Address"></text-input>
                         </field>
                     </div>
-                    <butt class="go_butt" @click="select_account" :disabled="disabled" :loading="loading">Select Account</butt>
+                    <butt class="go_butt" @click="select_account" :disabled="disabled || !step1.username" :loading="loading">Select Account</butt>
                 </template>
                 <template v-else>
                     <div class="title">Instagram {{ plan.count }} Followers</div>
                     <div class="desc">
-                        You buy {{ plan.count }} followers for {{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }} for one.
+                        You buy {{ plan.count }} followers for {{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }} for one.<br>
+                        <a v-if="accounts.length" href="#" @click.prevent="step1.new_account = false">Choose account</a>
                     </div>
                     <div class="fields_wrap">
                         <field label="Instagram Username:" :error="step1.errors.username">
@@ -46,7 +47,7 @@
                             <text-input v-model="step1.email" type="email" placeholder="Your E-mail Address"></text-input>
                         </field>
                     </div>
-                    <butt class="go_butt" @click="select_account" :disabled="disabled" :loading="loading">Select Account</butt>
+                    <butt class="go_butt" @click="select_account" :disabled="disabled || !step1.username" :loading="loading">Select Account</butt>
                 </template>
             </template>
             <template v-else-if="step === 2">

@@ -5,10 +5,11 @@
             <template v-if="success">
                 <img class="icon" alt="" src="/img/icons/thanks-icon.svg">
                 <div class="title">
-                    Thanks for question
+                    Thank you very much for leaving us your message!
                 </div>
                 <div class="desc">
-                    We will start fulfilling your order according to its description. If there will be any problems, we will e-mail you.
+                    Our support team will try to respond promptly and help you solve the problem.<br>
+                    In touch Your favorite followerus
                 </div>
             </template>
             <template v-else>
