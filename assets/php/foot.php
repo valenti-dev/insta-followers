@@ -2,7 +2,7 @@
 <? include 'footer.php'; ?>
 </div>
 </body>
-<? $version = '1.0.14'; ?>
+<? $version = '1.0.15'; ?>
 <? foreach ($styles as $style): ?>
     <link rel="<?= $style['rel']; ?>" href="<?= $style['href']; ?>?v=<?= $version; ?>" media="none" onload="if(media!='all')media='all'">
 <? endforeach; ?>
