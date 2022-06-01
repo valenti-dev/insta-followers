@@ -157,7 +157,7 @@
         background-color: #FFFFFF;
         border-radius: 0.625em;
         width: calc(25% - 2em);
-        padding: 1em 1.125em 5.625em;
+        padding: 0 1.125em 5.625em;
         box-sizing: border-box;
         position: relative;
         transition-property: transform, box-shadow;
