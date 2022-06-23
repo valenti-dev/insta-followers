@@ -12,15 +12,13 @@
                 </div>
                 <div class="price_wrap">
                     <div class="price">{{ $root.user_info.sym_b }}{{ plan.price }}{{ $root.user_info.sym_a }}</div>
-                    <div class="price_insc">
-                        (discount auto-applied)
-                    </div>
                 </div>
                 <div class="attrs_wrap">
                     <div class="attr">No password required</div>
                     <div class="attr">Fast delivery</div>
                     <div class="attr">24/7 Support</div>
                     <div class="attr">Cheapest</div>
+                    <div class="attr">High quality</div>
                 </div>
                 <butt class="go_butt" @click="order(plan)" :id="plan.butt_id">Buy Follower Now</butt>
             </div>
