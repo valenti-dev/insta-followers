@@ -6,10 +6,11 @@ $description = 'By using our Services, you agree to these terms. We encourage yo
 <? include '../assets/php/head.php'; ?>
     <section class="title_sect">
         <div class="wrap">
-            <h1 class="row1">Terms</h1>
+            <h1 class="row1">Terms and conditions: Rules, refund, and privacy</h1>
+            <!--
             <div class="row2">
-                The beginning of cooperation with the FollowerUs company means acceptance of these terms.
             </div>
+            -->
         </div>
     </section>
 <?
@@ -21,111 +22,93 @@ $styles['title_sect'] = [
     <section class="terms_seo_sect">
         <div class="wrap">
             <div class="row1">
+                <h2>1. Definition</h2>
                 <p>
-                    Registration and usage of the agency services mean that you accurately and fully understand the conditions of this agreement.
-                    It also indicates that the Client agrees with all applicable laws and regulations and takes responsibility for its actions within these laws.
-                    In case of disagreement with existing rules, the use of this resource is prohibited.
-                    All information on the site is protected by current copyright legislation and trademarks.
-                </p>
-                <h2>1. Service Policy</h2>
-                <p>
-                    FollowerUs only offers advertising services for your account on the Instagram page.
-                    At the same time, our company does not guarantee the activity of new subscribers on your page.
-                    We are only engaged in attracting new followers. Therefore, you should add Automatic Likes to your service package.
-                    We pull subscribers for you at a certain speed only on request.
-                </p>
-                <hr>
-                <h2>2. Payment Policy</h2>
-                <p>
-                    We accept payment by plastic cards as well as e-wallets, and crypto.
-                    All expenses are made after a thorough check of the authenticity and solvency of the card.
-                    We do not store banking and financial information on our websites.
-                    To conduct secure transactions, our IT department uses only SSL encryption.
+                    <b>Followerus</b>- service at the address <a href="/">followerus.com</a> operated by Qloyd OчU registration code 16257994. <b>Address</b>: Harju maakond, Tallinn, Kesklinna linnaosa, Roseni tn 13, 10111, Estonia, in accordance with laws of Estonia.<br>
+                    <b>Warranty</b> - The option of financial compensation for damaged or missing products.
                 </p>
                 <p>
-                    By agreeing to cooperate with our company, you exclude the possibility of filing fraudulent claims, disputes, or claims.
-                    Otherwise, we will delete all followers and block your account.
+                    By <b>service</b>, we mean a website.
+                </p>
+                <p>
+                    <b>Buyer</b> - a physical or corporate person who requires our services.
+                </p>
+                <p>
+                    <b>Ordering</b> - Providing appropriate data and payment.
+                </p>
+                <p>
+                    <b>The usage data</b> is information automatically accumulated by the Service's infrastructure (e.g. the duration of a page visit).
+                </p>
+                <p>
+                    <b>You</b> mean the person gaining access or making use of the Services and/or the company that the individual is accessing or using the Services on behalf of, as applicable.
                 </p>
                 <hr>
-                <h2>3. Registration Process</h2>
-                <p>
-                    The person accepting the registration and this agreement must be at least 13 years old.
-                </p>
-                <hr>
-                <h2>
-                    4. Copyright
-                </h2>
-                <p>
-                    Copying photos and any materials, texts, and images from our site is strictly prohibited. It will require written permission from our side.
-                </p>
-                <hr>
-                <h2>5. Limitation of Responsibility</h2>
-                <p>
-                    The FollowerUs company is not responsible for the activity of your account, possible damage, or removal of photos and videos by Instagram.
-                    Our company does not give guarantees for the services provided; we cannot guarantee the uninterrupted operation of your website.
-                    Our team cannot assure you of any consequences of the execution of the order.
-                </p>
-                <hr>
-                <h2>
-                    6. Changing the Terms
-                </h2>
-                <p>
-                    The FollowerUs company reserves the right to change these terms of the agreement at any time.
-                    We are committed to providing timely notice of these changes.
-                    From the moment changes are posted on our website, they will be considered effective.
-                    Additional notices are not provided.
-                    If customers continue to use our website and services, they agree with the changes made.
-                </p>
-                <h2>7. Refund Policy</h2>
-                <p>
-                    The probability of a refund for the services provided on our website is considered on an individual basis.
-                    The policy described in terms of Service is not a money-back guarantee.
-                    The following several factors may affect the decision to return (but not guarantee):
-                </p>
+                <h2>2. General rules</h2>
                 <ul>
-                    <li>number of new subscribers;</li>
-                    <li>date of receipt of money;</li>
-                    <li>force majeure circumstances;</li>
-                    <li>terms of the contract.</li>
+                    <li>You must notify our team in case of any kind of technical error. Free Instagram Followers can only be allowed once to try out our services.</li>
+                    <li>Once you have uploaded the profile photo, submitted the accurate information, your profile is unlocked for everyone, you can proceed with the order.</li>
+                    <li>If a user declares a dispute with Paypal, his/her account will be blacklisted, as well as suspended.</li>
+                    <li>There will be an announcement if there are some changes to our terms.</li>
                 </ul>
+                <hr>
+                <h2>3. Using private data sources</h2>
                 <p>
-                    Reviews from previous clients, order type, and previous experience with our team may also be taken into account.
-                </p>
-                <p>
-                    The Company may decide on a refund at its sole discretion. The client must contact the Support Service to consider this issue. Reimbursement occurs within 30 days.
-                </p>
-                <h3>7.1 Return as a Result of Not Receiving Orders</h3>
-                <p>
-                    The possibility of a refund for not receiving orders is at the discretion of the Company. The following matters are observed to consider the issue by the client:
-                </p>
-                <ul>
-                    <li>The account remains active and public.</li>
-                    <li>The Instagram account name was correct.</li>
-                    <li>The account and messages have not been deleted.</li>
-                    <li>Posts in the Instagram feed meet the requirements of the network and have not been blocked.</li>
-                    <li>At least 3 days have passed since the publication.</li>
-                    <li>The client has already contacted our Support Service. His question remained unresolved.</li>
-                </ul>
-                <h3>7.2 Refund due to No Likes and Followers</h3>
-                <p>
-                    Our Company strives to provide the highest quality of its services. But we cannot be responsible for the speed of recruiting followers.
-                    The Instagram service can remove or block posts that users mark as spam. It can lead to a reduction in likes and the number of subscribers.
+                    <b>Attention</b>: We may disclose certain information in connection with the Service to these third-party vendors.<br>
+                    <b>Interest</b>: With this new feature, we will continue to give you the same great features and benefits of the Service.<br>
+                    <b>Desire</b>: We will continue to work with these third party vendors for your protection.<br>
+                    <b>Action</b>: We will never share any of your personal information other than what is strictly required for the service, and all third-party vendors must adhere to our strict privacy policies.
                 </p>
                 <hr>
-                <h2>8. Privacy Policy</h2>
-                <p>
-                    The FollowerUs company follows all privacy policy rules:
-                </p>
+                <h2>4. Refund</h2>
                 <ul>
-                    <li>We do not transfer the personal data of clients to third parties. Our company does not collect information about its customers and their cards.</li>
-                    <li>We send all notifications to the email specified during the execution of the service agreement.</li>
-                    <li>Our team guarantees the anonymity of our clients. All data for logging into your account and working with the referral system are encrypted by secure data protection systems.</li>
-                    <li>If there are problems with the payment card, we will immediately notify you by email.</li>
+                    <li>Any order that cannot be fulfilled because we have been unable to contact you or because of an inaccurate profile, we will refund your payment.</li>
+                    <li>If you provide inaccurate information that caused the situation that the purchase was delivered to the wrong person, we will not issue a refund.</li>
+                    <li>You might be eligible for a full refund for products paid for the day before shipment if you did not get it promptly.</li>
+                    <li>You can ask for a refund once within one day of the date of purchase, as long as it's within the warranty period.</li>
+                    <li>We don't provide refunds if you order from more than one service unless it's a product that we can give to another customer.</li>
+                    <li>Warranty, as well as available data, can be found in the item description.</li>
+                </ul>
+                <hr>
+                <h2>5. Terms of delivery</h2>
+                <ul>
+                    <li>As soon as the transaction is successful, the service will start processing.</li>
+                    <li>Your service will not begin if payment has been delayed or canceled.</li>
+                    <li>If the service specifies a 24-hour turnaround time, the process starts as soon as payment has gone through. You will receive an order to the mail you specify and then make payment.</li>
                     <li>
-                        Data transmission is encrypted using SSL encryption and through the secure server of our payment gateways.
-                        We do not sell or buy, transfer, exchange, store, or otherwise disclose your information to anyone other than Acquirer, card networks/associations, or in response to lawful government requests.
+                        Please contact us using the form or email at <a href="mailto:contact@followerus.com">contact@followerus.com</a> if you have not received the service.
                     </li>
                 </ul>
+                <hr>
+                <h2>6. Responsibility</h2>
+                <ul>
+                    <li>It is possible to have your order processed once your account is authenticated to the public, and you upload a profile photo.</li>
+                    <li>The service may not look or work quite as expected when we try to use it. This is because each person needs a different level of service.</li>
+                    <li>The customer's responsibility is to make sure that the necessary steps are taken after receiving the order.</li>
+                    <li>We cannot ensure an accurate performance description if order quantity is greater than the maximum limit.</li>
+                    <li>Mailing address of the cardholder: Harju maakond, Tallinn, Kesklinna linnaosa, Roseni tn 13, 10111, Estonia.</li>
+                </ul>
+                <hr>
+                <h2>7. Privacy policy</h2>
+                <ul>
+                    <li>We guarantee that the email address will never be shared with third parties.</li>
+                    <li>We reserve the right to email you notifications. These will only be sent to the address provided when creating a ticket or order.</li>
+                    <li>All your data is strictly secured, guaranteeing that no third parties will ever know who you are. Your anonymity is fully insured at all times without fail.</li>
+                    <li>To protect the users' private data, we only allow direct account access to active customers who have already confirmed phone/email ownership and hold encryption keys securely. Your information will never be given to a third party.</li>
+                    <li>Third parties can't tap payments due to the encryption you're using.</li>
+                    <li>In rare cases where your card fails or doesn't work, we'll let you know as soon as possible by e-mail and on our website so that you don't lose your money.</li>
+                    <li>We use encryption and SSL to protect your privacy. Your card data is not stored or transmitted, and the only exception is through our payment gateways. We don't keep any of your details, such as card information.</li>
+                </ul>
+                <hr>
+                <h2>Changes to this Privacy Policy</h2>
+                <p>
+                    You can always check here for the latest version of our Privacy Policy.
+                </p>
+                <p>
+                    We will notify you by email before any changes to this Privacy Policy. Additionally, we will post a notice on our Service and update the "Last Updated" date in this Privacy Policy before the change occurs.
+                </p>
+                <p>
+                    We ask that you check this Privacy Policy from time to time for changes. Changes will happen as soon as the new updates are added to this page.
+                </p>
                 <hr>
             </div>
         </div>
