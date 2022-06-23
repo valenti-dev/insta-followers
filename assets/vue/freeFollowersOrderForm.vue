@@ -73,6 +73,7 @@
                                 case 202: { this.errors.username = response.data.text; } break;
                                 case 203: { this.errors.username = response.data.text; } break;
                                 case 301: { this.errors.general = response.data.text; } break;
+                                default: { this.errors.general = response.data.text; } break;
                             }
                         } break;
                         case 'Ok': {
