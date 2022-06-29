@@ -64,10 +64,10 @@
                 <div class="payment_methods_list">
                     <div class="payment_method" v-for="(method, method_indx) in step3.methods" :class="method.discount > 0 ? 'red' : ''" @click="open_pay(method)" id="COIN">
                         <div class="logo_wrap">
-                            <img class="logo" alt="" src="/img/payment_methods/default.png">
+                            <img class="logo" alt="" :src="method.logo ? method.logo : '/img/payment_methods/default.png'">
                         </div>
                         <div class="info">
-                            <div class="name">{{ method.name }}</div>
+                            <div class="name">{{ method.title }}</div>
                             <div class="price">
                                 <template v-if="method.price_local">
                                     {{ $root.user_info.sym_b }}{{ method.price_local }}{{ $root.user_info.sym_a }}
@@ -75,8 +75,8 @@
                                 <template v-else>
                                     ${{ method.price_usd }}
                                 </template>
-                                <template>
-                                    +{{ $root.user_info.sym_b }}{{method.tax_local}}{{ $root.user_info.sym_a }}
+                                <template v-if="method.tax">
+                                    +{{method.tax}}%
                                 </template>
                             </div>
                         </div>
