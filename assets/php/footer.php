@@ -8,6 +8,11 @@
                 <div class="line2">
                     Copyright © 2022 Followerus.com All Rights Reserved.
                 </div>
+                <div class="line2"><b>Payment method</b></div>
+                <div class="line7">
+                    <div class="item"><img class="logo" alt="Payment for followers" src="/img/footer/visa.svg"></div>
+                    <div class="item"><img class="logo" alt="Payment for followers" src="/img/footer/mastercard.svg"></div>
+                </div>
             </div>
             <div class="col col2">
                 <div class="line3">About</div>
@@ -17,6 +22,9 @@
                     <li><a href="/support">Support</a></li>
                     <li><a href="/terms">Terms</a></li>
                     <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://www.commercegate.com/" target="_blank">CommerceGate is our Payment Facilitator</a></li>
+                    <li><a href="https://www.cgbilling.com/secure" target="_blank">CommerceGate billing support</a></li>
                 </ul>
             </div>
             <div class="col col3">
