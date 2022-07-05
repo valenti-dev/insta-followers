@@ -5,6 +5,7 @@ import freeFollowersOrderForm from '../vue/freeFollowersOrderForm';
 import contactForm from '../vue/contactForm';
 import supportForm from '../vue/supportForm';
 import orderForm from '../vue/orderForm';
+import ticket from "../vue/ticket";
 ////////////////
 window.axios = require('axios').default;
 axios.defaults.withCredentials = true;
@@ -38,6 +39,7 @@ var app = new Vue({
         'order-form': orderForm,
         'pay-status-popup': payStatusPopup,
         reviews,
+        ticket,
     },
     data: {
         header: {
