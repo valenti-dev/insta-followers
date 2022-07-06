@@ -68,6 +68,10 @@
     .header.opened {
         background-color: #ffffff !important;
     }
+    .header .row1 .right > .butt {
+        height: 2.25em;
+        padding: 0 1em;
+    }
     .header .menu_burger {
         display: block;
         font-size: inherit;
