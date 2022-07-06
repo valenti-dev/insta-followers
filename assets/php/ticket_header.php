@@ -5,7 +5,7 @@
                 <logo></logo>
             </div>
             <div class="right">
-                <butt href="/">Home</butt>
+                <butt href="/">To Home</butt>
             </div>
         </div>
     </div>
