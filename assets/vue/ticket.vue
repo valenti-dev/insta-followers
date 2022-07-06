@@ -169,7 +169,8 @@ export default {
 
 <style scoped>
 .ticket_sect {
-    padding: 3.5em 0;
+    margin-top: -6.5em;
+    padding: 10em 0 3.5em;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -273,7 +274,8 @@ export default {
 }
 @media(max-width: 767px) {
     .ticket_sect {
-        padding: 1.5em 0 4em;
+        margin-top: -5em;
+        padding: 6.5em 0 4em;
     }
     .row1 {
         margin-bottom: 2em;

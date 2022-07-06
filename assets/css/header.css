@@ -61,7 +61,8 @@
     .terms_page:not(.scrolled) .header,
     .support_page:not(.scrolled) .header,
     .get_started_page:not(.scrolled) .header,
-    .blog_page:not(.scrolled) .header {
+    .blog_page:not(.scrolled) .header,
+    .ticket_page:not(.scrolled) .header {
         background-color: transparent;
         box-shadow: none;
     }
