@@ -20,7 +20,7 @@
                     <div class="attr">Cheapest</div>
                     <div class="attr">High quality</div>
                 </div>
-                <butt class="go_butt" @click="order(plan)" :id="plan.butt_id">Buy Follower Now</butt>
+                <butt class="go_butt" @click="order(plan)" :id="plan.butt_id">Buy now</butt>
             </div>
         </div>
     </div>

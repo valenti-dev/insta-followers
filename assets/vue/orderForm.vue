@@ -76,7 +76,7 @@
                                     ${{ method.price_usd }}
                                 </template>
                                 <template v-if="method.tax">
-                                    +{{method.tax}}%
+                                    + {{ tax }}% Vat
                                 </template>
                             </div>
                         </div>
@@ -486,6 +486,7 @@
         line-height: 1.465;
         text-decoration: none;
         color: inherit;
+        cursor: pointer;
         transition-property: background-color, box-shadow;
         transition-duration: 0.3s;
     }
