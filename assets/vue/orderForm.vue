@@ -76,7 +76,7 @@
                                     ${{ method.price_usd }}
                                 </template>
                                 <template v-if="+method.tax">
-                                    + {{ tax }}% Vat
+                                    + {{ method.tax }}% Vat
                                 </template>
                             </div>
                         </div>
