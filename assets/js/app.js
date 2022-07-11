@@ -27,6 +27,7 @@ axios.interceptors.response.use((response) => {
 import pricing from '../vue/pricing';
 import payStatusPopup from "../vue/payStatusPopup";
 import reviews from "../vue/reviews";
+import payStatusBlock from "../vue/payStatusBlock";
 var app = new Vue({
     el: "#app",
     components: {
@@ -38,6 +39,7 @@ var app = new Vue({
         'support-form': supportForm,
         'order-form': orderForm,
         'pay-status-popup': payStatusPopup,
+        'pay-status-block': payStatusBlock,
         reviews,
         ticket,
     },
