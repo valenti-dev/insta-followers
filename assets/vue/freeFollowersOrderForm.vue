@@ -78,8 +78,8 @@
                 form_data.append('email', this.email);
                 form_data.append('system', 'Instagram');
                 form_data.append('service', 'Followers');
-                form_data.append('type', 't1');
-                form_data.append('count', '10');
+                form_data.append('type', this.type);
+                form_data.append('count', this.count);
                 form_data.append('username', username);
                 axios.post('create_test_order_v2.php', form_data).then((response) => {
                     switch(response.data.result) {
