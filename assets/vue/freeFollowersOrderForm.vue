@@ -44,10 +44,30 @@
                 },
                 disabled: false,
                 success: null,
+
+                count: null,
+                type: null,
             };
         },
         mounted() {
             //this.email = localStorage.getItem('saved_email');
+            axios.post('get_plans.php').then((response) => {
+                if(response.data.result === 'Ok') {
+                    this.disabled = response.data.data.Instagram.Followers.plans.every((plan) => {
+                        if(!(+plan.price)) {
+                            for(var type_k in plan.types) {
+                                if(!(+plan.types[type_k].price) && !(+plan.types[type_k].disabled)) {
+                                    this.count = +plan.count;
+                                    this.type = type_k;
+                                    break;
+                                }
+                            }
+                            return !(this.count && this.type);
+                        }
+                        return true;
+                    });
+                }
+            });
         },
         methods: {
             submit() {
